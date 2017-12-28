@@ -5,6 +5,15 @@ import java.util.List;
 public class Login {
     private int status;
     private String name;
+    private int userId;
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
     //private String password;
 
     public int getStatus() {

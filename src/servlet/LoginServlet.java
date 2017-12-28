@@ -25,6 +25,8 @@ import java.sql.SQLException;
 @WebServlet(name = "LoginServlet" ,urlPatterns = {"/servlet/login"})
 public class LoginServlet extends HttpServlet {
 
+    private Login currentUser = new Login();
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("处理登录post请求……");
         String username = request.getParameter("username");
@@ -35,14 +37,25 @@ public class LoginServlet extends HttpServlet {
         /**
          * 处理登录验证逻辑
          */
-        Login login = new Login();
-        login.setName(username);
+
+
+        currentUser.setName(username);
+
         if (checkIsLoginSuccess(username,password,type)){//登录成功
-            login.setStatus(1);
+            currentUser.setStatus(1);
         }else{//登录失败
-            login.setStatus(0);
+            currentUser.setStatus(0);
         }
-        String jsonString = JSON.toJSONString(login);
+        String jsonString = JSON.toJSONString(currentUser);
+
+        //设置session
+        HttpSession session = request.getSession(true);
+        try {
+            session.setAttribute("login", currentUser);
+
+        } catch (Exception e) {
+            //session.setAttribute("login", new Login());
+        }
 
         OutputStream out = response.getOutputStream();
         out.write(jsonString.getBytes("UTF-8"));
@@ -74,12 +87,13 @@ public class LoginServlet extends HttpServlet {
         try {
 
             assert connection != null;
-            PreparedStatement pStatement = connection.prepareStatement("select name from customer where name = ? and password = ?");
+            PreparedStatement pStatement = connection.prepareStatement("select name,id from customer where name = ? and password = ?");
             pStatement.setString(1,userName);
             pStatement.setString(2,password);
             ResultSet resultSet = pStatement.executeQuery();
 
             if (resultSet.next()){//匹配成功，找到数据
+                currentUser.setUserId(resultSet.getInt(2));
                 return true;
             }else{//登录失败
                 return false;

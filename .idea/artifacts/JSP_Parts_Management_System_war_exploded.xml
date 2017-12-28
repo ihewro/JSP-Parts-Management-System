@@ -2,12 +2,15 @@
   <artifact type="exploded-war" name="JSP-Parts-Management-System:war exploded">
     <output-path>$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="JSP-Parts-Management-System/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="JSP-Parts-Management-System" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="fastjson-1.2.44" />
+        </element>
       </element>
+      <element id="javaee-facet-resources" facet="JSP-Parts-Management-System/web/Web" />
     </root>
   </artifact>
 </component>

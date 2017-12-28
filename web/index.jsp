@@ -1,5 +1,6 @@
 <%@ page import="java.text.SimpleDateFormat" %>
-<%@ page import="java.util.Date" %><%--
+<%@ page import="java.util.Date" %>
+<%@ page import="model.Login" %><%--
   Created by IntelliJ IDEA.
   User: hewro
   Date: 2017/12/22
@@ -18,14 +19,21 @@
 
   <%
     // 如果用户名已经存在，说明已经登录，跳转到主页
-    String username = (String) request.getSession().getAttribute("username");
-    if (username != null && username.length() > 0) {
-      response.sendRedirect("dashboard.jsp");
-      return;
+
+    HttpSession session2 = request.getSession(true);
+    Login loginBean = (Login) session2.getAttribute("login");
+
+    if(loginBean == null){
+      //response.sendRedirect("/custom/dashboard.jsp");
+      //return;
+    }else {//如果已经登录了，跳转到登录后界面
+      response.sendRedirect("/customer/dashboard.jsp");
+      return ;
     }
   %>
 
-    <div class="app app-header-fixed ">
+
+  <div class="app app-header-fixed ">
 
     <div class="container w-xxl w-auto-xs" ng-controller="SigninFormController" ng-init="app.settings.container = false;">
       <a href class="navbar-brand block m-t">登录</a>

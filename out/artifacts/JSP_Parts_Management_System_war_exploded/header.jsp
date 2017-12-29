@@ -10,3 +10,4 @@
 <link rel="stylesheet" href="../assets/css/frame.css">
 <link rel="stylesheet" href="../assets/css/function.css">
 <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/jquery.bootstrap-touchspin.min.css" >

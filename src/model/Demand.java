@@ -2,6 +2,7 @@ package model;
 
 
 public class Demand {
+    String partName;
     int customerId;
     int partId;
     double partPrice;
@@ -46,5 +47,13 @@ public class Demand {
 
     public void setCreated(String created) {
         this.created = created;
+    }
+
+    public String getPartName() {
+        return partName;
+    }
+
+    public void setPartName(String partName) {
+        this.partName = partName;
     }
 }

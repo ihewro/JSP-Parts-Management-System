@@ -1,7 +1,17 @@
 package util;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
+import com.alibaba.fastjson.JSON;
+import com.sun.rowset.CachedRowSetImpl;
+import model.Demand;
+import model.DemandsJson;
+import model.Part;
+import model.PartJson;
+
+import javax.sql.RowSet;
+import java.io.OutputStream;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class DbConn {
 
@@ -20,6 +30,58 @@ public class DbConn {
             return conn;
 		} catch (Exception e) {
 			System.err.println("连接数据库失败");
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	/**
+	 * 查询demand表内的数据
+	 * @return
+	 */
+	public static ResultSet selectDemandTable(){
+
+		Connection connection = DbConn.getConnection();
+		try {
+			PreparedStatement pStatement = connection.prepareStatement("select partId,partPrice,partNum,created from buy");
+			ResultSet resultSet = pStatement.executeQuery();
+			CachedRowSetImpl rowSet = null;
+			rowSet = new CachedRowSetImpl();
+			rowSet.populate(resultSet);
+
+			//关闭数据库连接
+			resultSet.close();
+			connection.close();
+
+			return  rowSet;
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		return  null;
+	}
+
+	/**
+	 * 查询buy
+	 * @return
+	 */
+	public static ResultSet selectBuyTable(){
+
+		//连接数据库，查询需求列表
+		Connection connection = DbConn.getConnection();
+		try {
+			PreparedStatement pStatement = connection.prepareStatement("select id,color,name,weight,introduction from parts");
+			ResultSet resultSet = pStatement.executeQuery();
+			CachedRowSetImpl rowSet = null;
+			rowSet = new CachedRowSetImpl();
+			rowSet.populate(resultSet);
+
+			//关闭数据库连接
+			resultSet.close();
+			connection.close();
+
+			return rowSet;
+		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 		return null;

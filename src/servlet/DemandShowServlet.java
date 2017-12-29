@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.sun.rowset.CachedRowSetImpl;
 import model.Demand;
 import model.DemandsJson;
+import model.Login;
 import util.DateUtil;
 import util.DbConn;
 
@@ -36,17 +37,29 @@ public class DemandShowServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");
         response.setCharacterEncoding("utf-8");
-
+        response.setHeader("content-type","text/html;charset=UTF-8");
         //连接数据库，查询需求列表
 
+        int id = -1;
+        if (request.getParameter("userId") != null) {
+            id = Integer.parseInt(request.getParameter("userId"));
+        }
         Connection connection = DbConn.getConnection();
+        PreparedStatement pStatement = null;
         try {
-            PreparedStatement pStatement = connection.prepareStatement("select partId,partPrice,partNum,created from buy");
+            if (id == -1){//id为-1代表查询所有用户的需求
+                pStatement = connection.prepareStatement("select partId,partPrice,partNum,created from buy");
+            }else{//否则查询某一具体用户的需求
+                pStatement = connection.prepareStatement("select partId,partPrice,partNum,created from buy WHERE id=?");
+                pStatement.setInt(1,id);
+            }
             ResultSet resultSet = pStatement.executeQuery();
             CachedRowSetImpl rowSet = null;
             rowSet = new CachedRowSetImpl();
             rowSet.populate(resultSet);
             //rowSet.last();
+
+
 
             DemandsJson demandsJson = new DemandsJson();
             List<Demand> demandList = new ArrayList<>();
@@ -58,9 +71,25 @@ public class DemandShowServlet extends HttpServlet {
                 temp.setPartPrice(rowSet.getDouble(2));
                 temp.setPartNum(rowSet.getInt(3));
                 temp.setCreated(DateUtil.SQLDatetimeToString(rowSet.getDate(4)));
+
+                pStatement = connection.prepareStatement("select name from parts WHERE id = ?");
+                pStatement.setInt(1,rowSet.getInt(1));
+                ResultSet resultSet1 = pStatement.executeQuery();
+                CachedRowSetImpl rowSet1 = null;
+                rowSet1 = new CachedRowSetImpl();
+                rowSet1.populate(resultSet1);
+                rowSet1.last();
+                temp.setPartName(rowSet1.getString(1));
+
+
                 demandList.add(temp);
+
+                resultSet1.close();
             }
             demandsJson.setDemandList(demandList);
+            demandsJson.setCustomerId(id);
+
+
 
             //关闭数据库连接
             resultSet.close();

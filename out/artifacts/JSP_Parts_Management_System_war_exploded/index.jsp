@@ -27,7 +27,7 @@
       //response.sendRedirect("/custom/dashboard.jsp");
       //return;
     }else {//如果已经登录了，跳转到登录后界面
-      response.sendRedirect("/customer/dashboard.jsp");
+      response.sendRedirect("/" + loginBean.getType()+ "/dashboard.jsp");
       return ;
     }
   %>
@@ -52,11 +52,11 @@
           </div>
           <div class="form-group">
             <label class="control-label">选择身份</label>
-            <select name="type" class="form-control m-b">
+            <select name="type" class="form-control m-b" id="chooseIdentify">
               <option value="customer">购买者</option>
               <option value="supplier">供应商</option>
               <option value="trader">交易员</option>
-              <option value="admin">维护员</option>
+              <option value="maintainer">维护员</option>
             </select>
           </div>
           <button type="submit" class="btn btn-lg btn-primary btn-block">登录</button>

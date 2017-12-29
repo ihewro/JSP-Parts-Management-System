@@ -1,23 +1,31 @@
 package model;
 
 
-public class Demand {
+public class Supply {
 
-    int demandId;
+    int supplyId;
     String partName;
-    int customerId;
-    String customerName;
+    int supplierId;
+    String supplierName;
     int partId;
     double partPrice;
     int partNum;
     String created;
 
-    public int getCustomerId() {
-        return customerId;
+    public String getPartName() {
+        return partName;
     }
 
-    public void setCustomerId(int customerId) {
-        this.customerId = customerId;
+    public void setPartName(String partName) {
+        this.partName = partName;
+    }
+
+    public int getSupplierId() {
+        return supplierId;
+    }
+
+    public void setSupplierId(int supplierId) {
+        this.supplierId = supplierId;
     }
 
     public int getPartId() {
@@ -52,27 +60,19 @@ public class Demand {
         this.created = created;
     }
 
-    public String getPartName() {
-        return partName;
+    public String getSupplierName() {
+        return supplierName;
     }
 
-    public void setPartName(String partName) {
-        this.partName = partName;
+    public void setSupplierName(String supplierName) {
+        this.supplierName = supplierName;
     }
 
-    public String getCustomerName() {
-        return customerName;
+    public int getSupplyId() {
+        return supplyId;
     }
 
-    public void setCustomerName(String customerName) {
-        this.customerName = customerName;
-    }
-
-    public int getDemandId() {
-        return demandId;
-    }
-
-    public void setDemandId(int demandId) {
-        this.demandId = demandId;
+    public void setSupplyId(int supplyId) {
+        this.supplyId = supplyId;
     }
 }

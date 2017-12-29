@@ -94,7 +94,7 @@
                                                 <label class="insert_tips">零件编号</label>
                                                 <select name="partId" class="form-control m-b" id="post_parts_list">
                                                     <%
-                                                        ResultSet rowSet = DbConn.selectBuyTable();
+                                                        ResultSet rowSet = DbConn.selectPartTable();
                                                         //out.println(rowSet.);
                                                         int length = 0;
                                                         if (rowSet != null){

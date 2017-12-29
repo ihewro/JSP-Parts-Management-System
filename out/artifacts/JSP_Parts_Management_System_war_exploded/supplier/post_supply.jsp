@@ -11,7 +11,7 @@
 
 <html>
 <head>
-    <title>发布需求</title>
+    <title>发布供应</title>
     <%@ include file="../header.jsp" %>
 
 </head>
@@ -38,7 +38,7 @@
 
 
             <div class="bg-light lter b-b wrapper-md">
-                <h1 class="m-n font-thin h3">发布新需求</h1>
+                <h1 class="m-n font-thin h3">发布新供应</h1>
             </div>
             <div class="wrapper-md" ng-controller="FormDemoCtrl">
                 <div class="panel panel-default">
@@ -46,8 +46,8 @@
                         填写下列表单
                     </div>
                     <div class="panel-body">
-                        <form class="form-horizontal" method="post" action="/servlet/addDemand">
-                            <input type="hidden" name="customerId" value="<%= ((Login)(request.getSession(true).getAttribute("login"))).getUserId() %>">
+                        <form class="form-horizontal" method="post" action="${pageContext.request.contextPath}/servlet/addSupply">
+                            <input type="hidden" name="supplierId" value="<%= ((Login)(request.getSession(true).getAttribute("login"))).getUserId() %>">
                             <input type="hidden" name="created" value="<%
                              java.text.SimpleDateFormat simpleDateFormat = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
                              java.util.Date currentTime = new java.util.Date();

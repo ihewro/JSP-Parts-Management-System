@@ -18,77 +18,78 @@
     <table id="12" parent="2" name="agreement"/>
     <table id="13" parent="2" name="buy"/>
     <table id="14" parent="2" name="customer"/>
-    <table id="15" parent="2" name="parts"/>
-    <table id="16" parent="2" name="supplier"/>
-    <table id="17" parent="2" name="supply"/>
-    <table id="18" parent="2" name="traders"/>
-    <table id="19" parent="2" name="transaction"/>
-    <column id="20" parent="12" name="customId">
+    <table id="15" parent="2" name="maintainer"/>
+    <table id="16" parent="2" name="parts"/>
+    <table id="17" parent="2" name="supplier"/>
+    <table id="18" parent="2" name="supply"/>
+    <table id="19" parent="2" name="traders"/>
+    <table id="20" parent="2" name="transaction"/>
+    <column id="21" parent="12" name="customId">
       <Position>1</Position>
       <DataType>int(10)|0</DataType>
     </column>
-    <column id="21" parent="12" name="supplierId">
+    <column id="22" parent="12" name="supplierId">
       <Position>2</Position>
       <DataType>int(10)|0</DataType>
     </column>
-    <column id="22" parent="12" name="partId">
+    <column id="23" parent="12" name="partId">
       <Position>3</Position>
       <DataType>int(10)|0</DataType>
     </column>
-    <column id="23" parent="12" name="partPrice">
+    <column id="24" parent="12" name="partPrice">
       <Position>4</Position>
       <DataType>double|0</DataType>
     </column>
-    <column id="24" parent="12" name="partNum">
+    <column id="25" parent="12" name="partNum">
       <Position>5</Position>
       <DataType>int(10)|0</DataType>
     </column>
-    <column id="25" parent="12" name="customSignature">
+    <column id="26" parent="12" name="customSignature">
       <Position>6</Position>
       <DataType>varchar(30)|0</DataType>
     </column>
-    <column id="26" parent="12" name="supplierSignature">
+    <column id="27" parent="12" name="supplierSignature">
       <Position>7</Position>
       <DataType>varchar(30)|0</DataType>
     </column>
-    <column id="27" parent="13" name="id">
+    <column id="28" parent="13" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="28" parent="13" name="customId">
+    <column id="29" parent="13" name="customId">
       <Position>2</Position>
       <DataType>int(10)|0</DataType>
     </column>
-    <column id="29" parent="13" name="partId">
+    <column id="30" parent="13" name="partId">
       <Position>3</Position>
       <DataType>int(10)|0</DataType>
     </column>
-    <column id="30" parent="13" name="partPrice">
+    <column id="31" parent="13" name="partPrice">
       <Position>4</Position>
       <DataType>double|0</DataType>
     </column>
-    <column id="31" parent="13" name="partNum">
+    <column id="32" parent="13" name="partNum">
       <Position>5</Position>
       <DataType>int(10)|0</DataType>
     </column>
-    <column id="32" parent="13" name="created">
+    <column id="33" parent="13" name="created">
       <Position>6</Position>
       <DataType>datetime|0</DataType>
     </column>
-    <index id="33" parent="13" name="customId">
+    <index id="34" parent="13" name="customId">
       <ColNames>customId</ColNames>
     </index>
-    <index id="34" parent="13" name="partId">
+    <index id="35" parent="13" name="partId">
       <ColNames>partId</ColNames>
     </index>
-    <key id="35" parent="13" name="PRIMARY">
+    <key id="36" parent="13" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="36" parent="13" name="buy_ibfk_1">
+    <foreign-key id="37" parent="13" name="buy_ibfk_1">
       <ColNames>customId</ColNames>
       <RefSchemaName>management</RefSchemaName>
       <RefTableName>customer</RefTableName>
@@ -96,7 +97,7 @@
       <OnUpdate>cascade</OnUpdate>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="37" parent="13" name="buy_ibfk_2">
+    <foreign-key id="38" parent="13" name="buy_ibfk_2">
       <ColNames>partId</ColNames>
       <RefSchemaName>management</RefSchemaName>
       <RefTableName>parts</RefTableName>
@@ -104,151 +105,193 @@
       <OnUpdate>cascade</OnUpdate>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <column id="38" parent="14" name="id">
+    <column id="39" parent="14" name="id">
       <Position>1</Position>
       <DataType>int(10)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="39" parent="14" name="name">
+    <column id="40" parent="14" name="name">
       <Position>2</Position>
       <DataType>varchar(30)|0</DataType>
     </column>
-    <column id="40" parent="14" name="password">
+    <column id="41" parent="14" name="password">
       <Position>3</Position>
       <DataType>varchar(30)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="41" parent="14" name="adress">
+    <column id="42" parent="14" name="adress">
       <Position>4</Position>
       <DataType>varchar(30)|0</DataType>
     </column>
-    <column id="42" parent="14" name="telephone">
+    <column id="43" parent="14" name="telephone">
       <Position>5</Position>
       <DataType>varchar(30)|0</DataType>
     </column>
-    <key id="43" parent="14" name="PRIMARY">
+    <key id="44" parent="14" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="44" parent="15" name="id">
+    <column id="45" parent="15" name="id">
       <Position>1</Position>
       <DataType>int(10)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="45" parent="15" name="color">
+    <column id="46" parent="15" name="name">
+      <Position>2</Position>
+      <DataType>varchar(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="47" parent="15" name="password">
+      <Position>3</Position>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="48" parent="15" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="49" parent="16" name="id">
+      <Position>1</Position>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="50" parent="16" name="color">
       <Position>2</Position>
       <DataType>varchar(30)|0</DataType>
     </column>
-    <column id="46" parent="15" name="name">
+    <column id="51" parent="16" name="name">
       <Position>3</Position>
       <DataType>varchar(30)|0</DataType>
     </column>
-    <column id="47" parent="15" name="weight">
+    <column id="52" parent="16" name="weight">
       <Position>4</Position>
       <DataType>double|0</DataType>
     </column>
-    <column id="48" parent="15" name="introduction">
+    <column id="53" parent="16" name="introduction">
       <Position>5</Position>
       <DataType>mediumtext|0</DataType>
     </column>
-    <key id="49" parent="15" name="PRIMARY">
+    <key id="54" parent="16" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="50" parent="16" name="id">
+    <column id="55" parent="17" name="id">
       <Position>1</Position>
       <DataType>int(10)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="51" parent="16" name="name">
+    <column id="56" parent="17" name="name">
       <Position>2</Position>
       <DataType>varchar(30)|0</DataType>
     </column>
-    <column id="52" parent="16" name="address">
+    <column id="57" parent="17" name="password">
       <Position>3</Position>
-      <DataType>varchar(30)|0</DataType>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
     </column>
-    <column id="53" parent="16" name="telephone">
+    <column id="58" parent="17" name="address">
       <Position>4</Position>
       <DataType>varchar(30)|0</DataType>
     </column>
-    <column id="54" parent="16" name="introduction">
+    <column id="59" parent="17" name="telephone">
       <Position>5</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <column id="60" parent="17" name="introduction">
+      <Position>6</Position>
       <DataType>text|0</DataType>
     </column>
-    <key id="55" parent="16" name="PRIMARY">
+    <key id="61" parent="17" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="56" parent="17" name="partId">
-      <Position>1</Position>
-      <DataType>int(10)|0</DataType>
-    </column>
-    <column id="57" parent="17" name="suppliedId">
-      <Position>2</Position>
-      <DataType>int(10)|0</DataType>
-    </column>
-    <column id="58" parent="17" name="price">
-      <Position>3</Position>
-      <DataType>double|0</DataType>
-    </column>
-    <column id="59" parent="17" name="num">
-      <Position>4</Position>
-      <DataType>int(11)|0</DataType>
-    </column>
-    <column id="60" parent="18" name="id">
+    <column id="62" parent="18" name="id">
       <Position>1</Position>
       <DataType>int(10)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="61" parent="18" name="name">
+    <column id="63" parent="18" name="partId">
       <Position>2</Position>
-      <DataType>varchar(30)|0</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="62" parent="18" name="password">
-      <Position>3</Position>
-      <DataType>varchar(30)|0</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="63" parent="18" name="tanscationId">
-      <Position>4</Position>
       <DataType>int(10)|0</DataType>
+    </column>
+    <column id="64" parent="18" name="supplierId">
+      <Position>3</Position>
+      <DataType>int(10)|0</DataType>
+    </column>
+    <column id="65" parent="18" name="partPrice">
+      <Position>4</Position>
+      <DataType>double|0</DataType>
+    </column>
+    <column id="66" parent="18" name="partNum">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="67" parent="18" name="created">
+      <Position>6</Position>
+      <DataType>datetime|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="64" parent="18" name="PRIMARY">
+    <key id="68" parent="18" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="65" parent="19" name="customId">
+    <column id="69" parent="19" name="id">
+      <Position>1</Position>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="70" parent="19" name="name">
+      <Position>2</Position>
+      <DataType>varchar(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="71" parent="19" name="password">
+      <Position>3</Position>
+      <DataType>varchar(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="72" parent="19" name="tanscationId">
+      <Position>4</Position>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="73" parent="19" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="74" parent="20" name="customId">
       <Position>1</Position>
       <DataType>int(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="66" parent="19" name="supplierId">
+    <column id="75" parent="20" name="supplierId">
       <Position>2</Position>
       <DataType>int(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="67" parent="19" name="partId">
+    <column id="76" parent="20" name="partId">
       <Position>3</Position>
       <DataType>int(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="68" parent="19" name="partPrice">
+    <column id="77" parent="20" name="partPrice">
       <Position>4</Position>
       <DataType>double|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="69" parent="19" name="partNum">
+    <column id="78" parent="20" name="partNum">
       <Position>5</Position>
       <DataType>int(10)|0</DataType>
       <NotNull>1</NotNull>

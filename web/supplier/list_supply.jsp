@@ -67,7 +67,7 @@
                                 <th>序号</th>
                                 <th>商品编号</th>
                                 <th>商品名称</th>
-                                <th>求购数量</th>
+                                <th>供应数量</th>
                                 <th>求购价格</th>
                                 <th>日期</th>
                                 <th>操作</th>
@@ -180,14 +180,14 @@
 </div>
 <script>
     $.ajax({
-        url: '../servlet/showDemand',
+        url: '../servlet/showSupply',
         type: 'GET',
         error: function (data) {
             alert("error" + data);
             return false;
         },
         success: function (data) {
-            var results = $.parseJSON(data).demandList;
+            var results = $.parseJSON(data).supplyList;
             for (var i = 0; i < results.length; i++){
                 s = "<tr>" +
                     '<td>' + parseInt(i+1) + '</td>' +
@@ -223,10 +223,10 @@
         $('#modifyOk').click(function () {
             //执行修改
             $.ajax({
-                url: '../servlet/modifyDemand',
+                url: '../servlet/modifySupply',
                 type: 'POST',
                 data: {partId: modal.find(".modal-body select[name='partId']").children('option:selected').val(),partNum:modal.find(".modal-body input[name='partNum']").val(),
-                partPrice: modal.find(".modal-body input[name='partPrice']").val(),mainId:mainId},
+                    partPrice: modal.find(".modal-body input[name='partPrice']").val(),mainId:mainId},
                 error: function (data) {
                     alert("error" + data);
                     return false;
@@ -251,7 +251,7 @@
         $('#deleteOk').click(function (e) {
             //执行删除
             $.ajax({
-                url: '../servlet/deleteDemand?userId=<%= ((Login)(request.getSession(true).getAttribute("login"))).getUserId() %>',
+                url: '../servlet/deleteSupply?userId=<%= ((Login)(request.getSession(true).getAttribute("login"))).getUserId() %>',
                 type: 'POST',
                 data: {id:mainId},
                 error: function (data) {

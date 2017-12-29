@@ -16,10 +16,10 @@
             <i class="glyphicon glyphicon-align-justify"></i>
         </button>
         <!-- brand -->
-        <a href="#/" class="navbar-brand text-lt">
+        <a href="#" class="navbar-brand text-lt">
             <i class="fa fa-btc"></i>
             <img src="img/logo.png" alt="." class="hide">
-            <span class="hidden-folded m-l-xs">Angulr</span>
+            <span class="hidden-folded m-l-xs">用户</span>
         </a>
         <!-- / brand -->
     </div>
@@ -51,32 +51,8 @@
                 </a>
                 <!-- dropdown -->
                 <ul class="dropdown-menu animated fadeInRight w">
-                    <li class="wrapper b-b m-b-sm bg-light m-t-n-xs">
-                        <div>
-                            <p>300mb of 500mb used</p>
-                        </div>
-                        <div class="progress progress-xs m-b-none dker">
-                            <div class="progress-bar progress-bar-info" data-toggle="tooltip" data-original-title="50%" style="width: 50%"></div>
-                        </div>
-                    </li>
                     <li>
-                        <a href="">
-                            <span class="badge bg-danger pull-right">30%</span>
-                            <span>Settings</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a ui-sref="app.page.profile">Profile</a>
-                    </li>
-                    <li>
-                        <a ui-sref="app.docs">
-                            <span class="label bg-info pull-right">new</span>
-                            Help
-                        </a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                        <a ui-sref="access.signin">Logout</a>
+                        <a id="exitSystem" href="${pageContext.request.contextPath}/servlet/exitSystem">退出</a>
                     </li>
                 </ul>
                 <!-- / dropdown -->

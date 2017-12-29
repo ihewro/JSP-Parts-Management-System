@@ -23,8 +23,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-@WebServlet(name = "PartsShowServlet", urlPatterns = {"/servlet/showParts"})
-public class PartsShowServlet extends HttpServlet {
+@WebServlet(name = "ShowPartsServlet", urlPatterns = {"/servlet/showParts"})
+public class ShowPartsServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
@@ -52,7 +52,7 @@ public class PartsShowServlet extends HttpServlet {
             //写入数据
             while (rowSet.next()){
                 Part temp = new Part();
-                temp.setId(rowSet.getInt(1));
+                temp.setPartId(rowSet.getInt(1));
                 temp.setColor(rowSet.getString(2));
                 temp.setName(rowSet.getString(3));
                 temp.setWeight(rowSet.getDouble(4));

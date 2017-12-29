@@ -95,18 +95,6 @@
                             <span>订单列表</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="list_supplier.jsp">
-                            <i class="glyphicon glyphicon-signal"></i>
-                            <span>供应商列表</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="list_trader.jsp">
-                            <i class="fa fa-list-alt"></i>
-                            <span>交易员列表</span>
-                        </a>
-                    </li>
                 </ul>
             </nav>
             <!-- nav -->

@@ -27,8 +27,8 @@ import java.util.List;
  * 显示需求列表
  */
 
-@WebServlet(name = "DemandShowServlet", urlPatterns = {"/servlet/showDemand"})
-public class DemandShowServlet extends HttpServlet {
+@WebServlet(name = "ShowDemandServlet", urlPatterns = {"/servlet/showDemand"})
+public class ShowDemandServlet extends HttpServlet {
 
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -48,9 +48,9 @@ public class DemandShowServlet extends HttpServlet {
         PreparedStatement pStatement = null;
         try {
             if (id == -1){//id为-1代表查询所有用户的需求
-                pStatement = connection.prepareStatement("select partId,partPrice,partNum,created from buy");
+                pStatement = connection.prepareStatement("select partId,partPrice,partNum,created,customId,id from buy");
             }else{//否则查询某一具体用户的需求
-                pStatement = connection.prepareStatement("select partId,partPrice,partNum,created from buy WHERE id=?");
+                pStatement = connection.prepareStatement("select partId,partPrice,partNum,created,customId,id from buy WHERE id=?");
                 pStatement.setInt(1,id);
             }
             ResultSet resultSet = pStatement.executeQuery();
@@ -81,6 +81,17 @@ public class DemandShowServlet extends HttpServlet {
                 rowSet1.last();
                 temp.setPartName(rowSet1.getString(1));
 
+
+                pStatement = connection.prepareStatement("select name from customer WHERE id = ?");
+                pStatement.setInt(1,rowSet.getInt(5));
+                ResultSet resultSet2 = pStatement.executeQuery();
+                CachedRowSetImpl rowSet2 = null;
+                rowSet2 = new CachedRowSetImpl();
+                rowSet2.populate(resultSet2);
+                rowSet2.last();
+                temp.setCustomerName(rowSet2.getString(1));
+
+                temp.setDemandId(rowSet.getInt(6));
 
                 demandList.add(temp);
 

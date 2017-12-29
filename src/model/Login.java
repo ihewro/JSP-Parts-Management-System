@@ -6,6 +6,7 @@ public class Login {
     private int status;
     private String name;
     private int userId;
+    private String type;
 
     public int getUserId() {
         return userId;
@@ -30,6 +31,14 @@ public class Login {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     /*public String getPassword() {

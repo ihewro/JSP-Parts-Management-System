@@ -16,10 +16,10 @@
             <i class="glyphicon glyphicon-align-justify"></i>
         </button>
         <!-- brand -->
-        <a href="#" class="navbar-brand text-lt">
+        <a href="#/" class="navbar-brand text-lt">
             <i class="fa fa-btc"></i>
             <img src="img/logo.png" alt="." class="hide">
-            <span class="hidden-folded m-l-xs">用户</span>
+            <span class="hidden-folded m-l-xs">Angulr</span>
         </a>
         <!-- / brand -->
     </div>
@@ -52,7 +52,7 @@
                 <!-- dropdown -->
                 <ul class="dropdown-menu animated fadeInRight w">
                     <li>
-                        <a id="exitSystem" href="${pageContext.request.contextPath}/servlet/exitSystem">退出</a>
+                        <a id="exitSystem" href="/servlet/exitSystem">退出</a>
                     </li>
                 </ul>
                 <!-- / dropdown -->

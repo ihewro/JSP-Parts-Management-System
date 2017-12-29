@@ -38,7 +38,7 @@ public class LoginServlet extends HttpServlet {
          * 处理登录验证逻辑
          */
 
-
+        currentUser.setType(type);
         currentUser.setName(username);
 
         if (checkIsLoginSuccess(username,password,type)){//登录成功
@@ -87,7 +87,8 @@ public class LoginServlet extends HttpServlet {
         try {
 
             assert connection != null;
-            PreparedStatement pStatement = connection.prepareStatement("select name,id from customer where name = ? and password = ?");
+            String queryString = "select name,id from " + type+ " where name = ? and password = ?";
+            PreparedStatement pStatement = connection.prepareStatement(queryString);
             pStatement.setString(1,userName);
             pStatement.setString(2,password);
             ResultSet resultSet = pStatement.executeQuery();

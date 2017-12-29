@@ -12,6 +12,7 @@ $(function () {
 
 var loginCheck = function () {
     $("#login_form").submit(function () {
+        var identify = $("#chooseIdentify").children('option:selected').val();
         $.ajax({
             url: '/servlet/login',
             type: 'POST',
@@ -26,7 +27,7 @@ var loginCheck = function () {
                 //alert(results.status);
                 if (results.status === 1){//登录成功
                     toastr.success("登录成功，即将为您跳转管理页面");
-                    window.location.href="/customer/dashboard.jsp";
+                    window.location.href="/"+ identify +"/dashboard.jsp";
 
                 }else{//登录失败
                     toastr.error("登录失败，请检查用户名或密码");
@@ -55,7 +56,9 @@ var initWeb = function(){
         "hideEasing": "linear",
         "showMethod": "fadeIn",
         "hideMethod": "fadeOut"
-    }
+    };
+    
+
 };
 
 var initTheme = function () {

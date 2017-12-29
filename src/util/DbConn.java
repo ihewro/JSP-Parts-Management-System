@@ -49,6 +49,7 @@ public class DbConn {
 			rowSet = new CachedRowSetImpl();
 			rowSet.populate(resultSet);
 
+
 			//关闭数据库连接
 			resultSet.close();
 			connection.close();
@@ -62,10 +63,10 @@ public class DbConn {
 	}
 
 	/**
-	 * 查询buy
+	 * 查询part
 	 * @return
 	 */
-	public static ResultSet selectBuyTable(){
+	public static ResultSet selectPartTable(){
 
 		//连接数据库，查询需求列表
 		Connection connection = DbConn.getConnection();
@@ -86,4 +87,11 @@ public class DbConn {
 		}
 		return null;
 	}
+
+
+
+
+
+
+
 }

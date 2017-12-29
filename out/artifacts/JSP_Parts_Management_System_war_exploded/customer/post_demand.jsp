@@ -126,7 +126,7 @@
         success: function (data) {
             results = $.parseJSON(data).partList;
             for (var i = 0; i < results.length; i++){
-                s = "<option value=\"" + results[i].id + "\">"+ results[i].name +"</option>";
+                s = "<option value=\"" + results[i].partId + "\">"+ results[i].name +"</option>";
                 $("#post_parts_list").append(s);
             }
         }

@@ -1,18 +1,18 @@
 package model;
 
 public class Part {
-    int id;
+    int partId;
     String color;
     String name;
     double weight;
     String text;
 
-    public int getId() {
-        return id;
+    public int getPartId() {
+        return partId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setPartId(int partId) {
+        this.partId = partId;
     }
 
     public String getColor() {

@@ -22,7 +22,7 @@
     <table id="16" parent="2" name="parts"/>
     <table id="17" parent="2" name="supplier"/>
     <table id="18" parent="2" name="supply"/>
-    <table id="19" parent="2" name="traders"/>
+    <table id="19" parent="2" name="trader"/>
     <table id="20" parent="2" name="transaction"/>
     <column id="21" parent="12" name="customId">
       <Position>1</Position>
@@ -54,7 +54,7 @@
     </column>
     <column id="28" parent="13" name="id">
       <Position>1</Position>
-      <DataType>int(11)|0</DataType>
+      <DataType>int(10)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
@@ -78,18 +78,22 @@
       <Position>6</Position>
       <DataType>datetime|0</DataType>
     </column>
-    <index id="34" parent="13" name="customId">
+    <column id="34" parent="13" name="status">
+      <Position>7</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="35" parent="13" name="customId">
       <ColNames>customId</ColNames>
     </index>
-    <index id="35" parent="13" name="partId">
+    <index id="36" parent="13" name="partId">
       <ColNames>partId</ColNames>
     </index>
-    <key id="36" parent="13" name="PRIMARY">
+    <key id="37" parent="13" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="37" parent="13" name="buy_ibfk_1">
+    <foreign-key id="38" parent="13" name="buy_ibfk_1">
       <ColNames>customId</ColNames>
       <RefSchemaName>management</RefSchemaName>
       <RefTableName>customer</RefTableName>
@@ -97,7 +101,7 @@
       <OnUpdate>cascade</OnUpdate>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="38" parent="13" name="buy_ibfk_2">
+    <foreign-key id="39" parent="13" name="buy_ibfk_2">
       <ColNames>partId</ColNames>
       <RefSchemaName>management</RefSchemaName>
       <RefTableName>parts</RefTableName>
@@ -105,196 +109,245 @@
       <OnUpdate>cascade</OnUpdate>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <column id="39" parent="14" name="id">
+    <column id="40" parent="14" name="id">
       <Position>1</Position>
       <DataType>int(10)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="40" parent="14" name="name">
+    <column id="41" parent="14" name="name">
       <Position>2</Position>
       <DataType>varchar(30)|0</DataType>
     </column>
-    <column id="41" parent="14" name="password">
+    <column id="42" parent="14" name="password">
       <Position>3</Position>
       <DataType>varchar(30)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="42" parent="14" name="adress">
+    <column id="43" parent="14" name="adress">
       <Position>4</Position>
       <DataType>varchar(30)|0</DataType>
     </column>
-    <column id="43" parent="14" name="telephone">
+    <column id="44" parent="14" name="telephone">
       <Position>5</Position>
       <DataType>varchar(30)|0</DataType>
     </column>
-    <key id="44" parent="14" name="PRIMARY">
+    <key id="45" parent="14" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="45" parent="15" name="id">
+    <column id="46" parent="15" name="id">
       <Position>1</Position>
       <DataType>int(10)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="46" parent="15" name="name">
+    <column id="47" parent="15" name="name">
       <Position>2</Position>
       <DataType>varchar(30)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="47" parent="15" name="password">
+    <column id="48" parent="15" name="password">
       <Position>3</Position>
       <DataType>int(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="48" parent="15" name="PRIMARY">
+    <key id="49" parent="15" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="49" parent="16" name="id">
+    <column id="50" parent="16" name="id">
       <Position>1</Position>
       <DataType>int(10)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="50" parent="16" name="color">
+    <column id="51" parent="16" name="color">
       <Position>2</Position>
       <DataType>varchar(30)|0</DataType>
     </column>
-    <column id="51" parent="16" name="name">
+    <column id="52" parent="16" name="name">
       <Position>3</Position>
       <DataType>varchar(30)|0</DataType>
     </column>
-    <column id="52" parent="16" name="weight">
+    <column id="53" parent="16" name="weight">
       <Position>4</Position>
       <DataType>double|0</DataType>
     </column>
-    <column id="53" parent="16" name="introduction">
+    <column id="54" parent="16" name="introduction">
       <Position>5</Position>
       <DataType>mediumtext|0</DataType>
     </column>
-    <key id="54" parent="16" name="PRIMARY">
+    <key id="55" parent="16" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="55" parent="17" name="id">
+    <column id="56" parent="17" name="id">
       <Position>1</Position>
       <DataType>int(10)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="56" parent="17" name="name">
+    <column id="57" parent="17" name="name">
       <Position>2</Position>
       <DataType>varchar(30)|0</DataType>
     </column>
-    <column id="57" parent="17" name="password">
+    <column id="58" parent="17" name="password">
       <Position>3</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="58" parent="17" name="address">
+    <column id="59" parent="17" name="address">
       <Position>4</Position>
       <DataType>varchar(30)|0</DataType>
     </column>
-    <column id="59" parent="17" name="telephone">
+    <column id="60" parent="17" name="telephone">
       <Position>5</Position>
       <DataType>varchar(30)|0</DataType>
     </column>
-    <column id="60" parent="17" name="introduction">
+    <column id="61" parent="17" name="introduction">
       <Position>6</Position>
       <DataType>text|0</DataType>
     </column>
-    <key id="61" parent="17" name="PRIMARY">
+    <key id="62" parent="17" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="62" parent="18" name="id">
+    <column id="63" parent="18" name="id">
       <Position>1</Position>
       <DataType>int(10)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="63" parent="18" name="partId">
+    <column id="64" parent="18" name="partId">
       <Position>2</Position>
       <DataType>int(10)|0</DataType>
     </column>
-    <column id="64" parent="18" name="supplierId">
+    <column id="65" parent="18" name="supplierId">
       <Position>3</Position>
       <DataType>int(10)|0</DataType>
     </column>
-    <column id="65" parent="18" name="partPrice">
+    <column id="66" parent="18" name="partPrice">
       <Position>4</Position>
       <DataType>double|0</DataType>
     </column>
-    <column id="66" parent="18" name="partNum">
+    <column id="67" parent="18" name="partNum">
       <Position>5</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="67" parent="18" name="created">
+    <column id="68" parent="18" name="created">
       <Position>6</Position>
       <DataType>datetime|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="68" parent="18" name="PRIMARY">
+    <index id="69" parent="18" name="partId">
+      <ColNames>partId</ColNames>
+    </index>
+    <index id="70" parent="18" name="supplierId">
+      <ColNames>supplierId</ColNames>
+    </index>
+    <key id="71" parent="18" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="69" parent="19" name="id">
+    <foreign-key id="72" parent="18" name="supply_ibfk_1">
+      <ColNames>partId</ColNames>
+      <RefSchemaName>management</RefSchemaName>
+      <RefTableName>parts</RefTableName>
+      <RefColNames>id</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="73" parent="18" name="supply_ibfk_2">
+      <ColNames>supplierId</ColNames>
+      <RefSchemaName>management</RefSchemaName>
+      <RefTableName>supplier</RefTableName>
+      <RefColNames>id</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="74" parent="19" name="id">
       <Position>1</Position>
       <DataType>int(10)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="70" parent="19" name="name">
+    <column id="75" parent="19" name="name">
       <Position>2</Position>
       <DataType>varchar(30)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="71" parent="19" name="password">
+    <column id="76" parent="19" name="password">
       <Position>3</Position>
       <DataType>varchar(30)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="72" parent="19" name="tanscationId">
-      <Position>4</Position>
-      <DataType>int(10)|0</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <key id="73" parent="19" name="PRIMARY">
+    <key id="77" parent="19" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="74" parent="20" name="customId">
+    <column id="78" parent="20" name="id">
       <Position>1</Position>
       <DataType>int(10)|0</DataType>
       <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="75" parent="20" name="supplierId">
+    <column id="79" parent="20" name="supplyId">
       <Position>2</Position>
-      <DataType>int(10)|0</DataType>
+      <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="76" parent="20" name="partId">
+    <column id="80" parent="20" name="buyId">
       <Position>3</Position>
       <DataType>int(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="77" parent="20" name="partPrice">
+    <column id="81" parent="20" name="partPrice">
       <Position>4</Position>
       <DataType>double|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="78" parent="20" name="partNum">
+    <column id="82" parent="20" name="partNum">
       <Position>5</Position>
       <DataType>int(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
+    <column id="83" parent="20" name="suggestion">
+      <Position>6</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="84" parent="20" name="customerStatus">
+      <Position>7</Position>
+      <DataType>int(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="85" parent="20" name="supplierStatus">
+      <Position>8</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="86" parent="20" name="FK_ID">
+      <ColNames>buyId</ColNames>
+    </index>
+    <key id="87" parent="20" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="88" parent="20" name="FK_ID">
+      <ColNames>buyId</ColNames>
+      <RefSchemaName>management</RefSchemaName>
+      <RefTableName>buy</RefTableName>
+      <RefColNames>id</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
   </database-model>
 </dataSource>

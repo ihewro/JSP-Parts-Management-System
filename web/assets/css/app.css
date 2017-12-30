@@ -1,4 +1,4 @@
-/* 
+/*
 
 */
 
@@ -914,13 +914,11 @@ body {
     .navbar-header {
         width: 200px;
     }
-
     .navbar-collapse,
     .app-content,
     .app-footer {
         margin-left: 200px;
     }
-
     .app-aside-right {
         position: absolute;
         top: 50px;
@@ -928,59 +926,46 @@ body {
         bottom: 0;
         z-index: 1000;
     }
-
     .app-aside-right.pos-fix {
         z-index: 1010;
     }
-
     .visible-folded {
         display: none;
     }
-
     .app-aside-folded .hidden-folded {
         display: none !important;
     }
-
     .app-aside-folded .visible-folded {
         display: inherit;
     }
-
     .app-aside-folded .text-center-folded {
         text-align: center;
     }
-
     .app-aside-folded .pull-none-folded {
         float: none !important;
     }
-
     .app-aside-folded .w-auto-folded {
         width: auto;
     }
-
     .app-aside-folded .app-aside,
     .app-aside-folded .navbar-header {
         width: 60px;
     }
-
     .app-aside-folded .navbar-collapse,
     .app-aside-folded .app-content,
     .app-aside-folded .app-footer {
         margin-left: 60px;
     }
-
     .app-aside-folded .app-header .navbar-brand {
         display: block;
         padding: 0;
     }
-
     .app-aside-fixed .app-aside:before {
         position: fixed;
     }
-
     .app-aside-fixed .app-header .navbar-header {
         position: fixed;
     }
-
     .app-aside-fixed .aside-wrap {
         position: fixed;
         top: 50px;
@@ -990,7 +975,6 @@ body {
         width: 199px;
         overflow: hidden;
     }
-
     .app-aside-fixed .aside-wrap .navi-wrap {
         position: relative;
         width: 217px;
@@ -999,46 +983,36 @@ body {
         overflow-y: scroll;
         -webkit-overflow-scrolling: touch;
     }
-
     .app-aside-fixed .aside-wrap .navi-wrap::-webkit-scrollbar {
         -webkit-appearance: none;
     }
-
     .app-aside-fixed .aside-wrap .navi-wrap::-webkit-scrollbar:vertical {
         width: 17px;
     }
-
     .app-aside-fixed .aside-wrap .navi-wrap > * {
         width: 200px;
     }
-
     .smart .app-aside-fixed .aside-wrap .navi-wrap {
         width: 200px;
     }
-
     .app-aside-fixed.app-aside-folded .app-aside {
         position: fixed;
         top: 0;
         bottom: 0;
         z-index: 1010;
     }
-
     .app-aside-fixed.app-aside-folded .aside-wrap {
         width: 59px;
     }
-
     .app-aside-fixed.app-aside-folded .aside-wrap .navi-wrap {
         width: 77px;
     }
-
     .app-aside-fixed.app-aside-folded .aside-wrap .navi-wrap > * {
         width: 60px;
     }
-
     .smart .app-aside-fixed.app-aside-folded .aside-wrap .navi-wrap {
         width: 60px;
     }
-
     .bg-auto:before {
         position: absolute;
         top: 0;
@@ -1049,15 +1023,12 @@ body {
         border: inherit;
         content: "";
     }
-
     .bg-auto.b-l:before {
         margin-left: -1px;
     }
-
     .bg-auto.b-r:before {
         margin-right: -1px;
     }
-
     .col.show {
         display: table-cell !important;
     }
@@ -1067,21 +1038,17 @@ body {
     .hbox-auto-sm {
         display: block;
     }
-
     .hbox-auto-sm > .col {
         display: block;
         width: auto;
         height: auto;
     }
-
     .hbox-auto-sm > .col.show {
         display: block !important;
     }
-
     .hbox-auto-sm .vbox {
         height: auto;
     }
-
     .hbox-auto-sm .cell-inner {
         position: static !important;
     }
@@ -1092,67 +1059,53 @@ body {
         height: auto;
         min-height: 100%;
     }
-
     .navbar-fixed-bottom {
         position: fixed;
     }
-
     .app-aside {
         float: none;
     }
-
     .app-content-full {
         position: relative;
         top: 0;
         width: 100% !important;
     }
-
     .hbox-auto-xs {
         display: block;
     }
-
     .hbox-auto-xs > .col {
         display: block;
         width: auto;
         height: auto;
     }
-
     .hbox-auto-xs .vbox {
         height: auto;
     }
-
     .hbox-auto-xs .cell-inner {
         position: static !important;
     }
-
     .navbar-nav {
         margin-top: 0;
         margin-bottom: 0;
     }
-
     .navbar-nav > li > a {
         box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
     }
-
     .navbar-nav > li > a .up {
         top: 0;
     }
-
     .navbar-nav > li > a .avatar {
         width: 30px;
         margin-top: -5px;
     }
-
     .navbar-nav .open .dropdown-menu {
         background-color: #fff;
     }
-
     .navbar-form {
         margin-top: 0 !important;
         margin-bottom: 0 !important;
         box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
     }
-
     .navbar-form .form-group {
         margin-bottom: 0;
     }
@@ -1175,39 +1128,31 @@ html.bg {
         -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
         box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
     }
-
     .app.container .app-aside {
         overflow-x: hidden;
     }
-
     .app.container.app-aside-folded .app-aside {
         overflow-x: visible;
     }
-
     .app.container.app-aside-fixed .aside-wrap {
         left: inherit;
     }
-
     .app.container.app-aside-fixed.app-aside-folded .app-aside > ul.nav {
         position: absolute;
     }
-
     .app.container .app-header,
     .app.container .app-aside {
         max-width: 750px;
     }
-
     .app.container .app-footer-fixed {
         right: auto;
         left: auto;
         width: 100%;
         max-width: 550px;
     }
-
     .app.container.app-aside-folded .app-footer-fixed {
         max-width: 690px;
     }
-
     .app.container.app-aside-dock .app-footer-fixed {
         max-width: 750px;
     }
@@ -1217,20 +1162,16 @@ html.bg {
     .app.container {
         width: 970px;
     }
-
     .app.container .app-header,
     .app.container .app-aside {
         max-width: 970px;
     }
-
     .app.container .app-footer-fixed {
         max-width: 770px;
     }
-
     .app.container.app-aside-folded .app-footer-fixed {
         max-width: 910px;
     }
-
     .app.container.app-aside-dock .app-footer-fixed {
         max-width: 970px;
     }
@@ -1240,20 +1181,16 @@ html.bg {
     .app.container {
         width: 1170px;
     }
-
     .app.container .app-header,
     .app.container .app-aside {
         max-width: 1170px;
     }
-
     .app.container .app-footer-fixed {
         max-width: 970px;
     }
-
     .app.container.app-aside-folded .app-footer-fixed {
         max-width: 1110px;
     }
-
     .app.container.app-aside-dock .app-footer-fixed {
         max-width: 1170px;
     }
@@ -1340,11 +1277,9 @@ html.bg {
     .app-aside-folded .nav-sub-header {
         display: block !important;
     }
-
     .app-aside-folded .nav-sub-header a {
         padding: 15px 20px !important;
     }
-
     .app-aside-folded .navi > ul > li > a {
         position: relative;
         height: 50px;
@@ -1352,15 +1287,12 @@ html.bg {
         text-align: center;
         border: none;
     }
-
     .app-aside-folded .navi > ul > li > a span {
         display: none;
     }
-
     .app-aside-folded .navi > ul > li > a span.pull-right {
         display: none !important;
     }
-
     .app-aside-folded .navi > ul > li > a i {
         display: block;
         float: none !important;
@@ -1370,11 +1302,9 @@ html.bg {
         line-height: 50px;
         border: none !important;
     }
-
     .app-aside-folded .navi > ul > li > a i b {
         left: 0 !important;
     }
-
     .app-aside-folded .navi > ul > li > a .badge,
     .app-aside-folded .navi > ul > li > a .label {
         position: absolute;
@@ -1382,7 +1312,6 @@ html.bg {
         right: 12px;
         z-index: 3;
     }
-
     .app-aside-folded .navi > ul > li > ul {
         position: absolute;
         top: 0 !important;
@@ -1393,11 +1322,9 @@ html.bg {
         -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
-
     .app-aside-folded .navi li li a {
         padding-left: 20px !important;
     }
-
     .app-aside-folded.app-aside-fixed .app-aside > ul.nav {
         position: fixed;
         left: 80px;
@@ -1410,7 +1337,6 @@ html.bg {
         opacity: 1;
         -webkit-overflow-scrolling: touch;
     }
-
     .app-aside-folded.app-aside-fixed .app-aside > ul.nav:before {
         position: absolute;
         top: 0;
@@ -1419,7 +1345,6 @@ html.bg {
         height: 50px;
         content: "";
     }
-
     .app-aside-folded.app-aside-fixed .app-aside > ul.nav a {
         padding-right: 20px !important;
         padding-left: 20px !important;
@@ -1431,18 +1356,15 @@ html.bg {
     body {
         overflow-x: hidden !important;
     }
-
     .app {
         overflow-x: hidden;
     }
-
     .app-content {
         -webkit-transition: -webkit-transform 0.2s ease;
         -moz-transition: -moz-transform 0.2s ease;
         -o-transition: -o-transform 0.2s ease;
         transition: transform 0.2s ease;
     }
-
     .off-screen {
         position: fixed;
         top: 50px;
@@ -1455,7 +1377,6 @@ html.bg {
         visibility: visible;
         -webkit-overflow-scrolling: touch;
     }
-
     .off-screen + * {
         position: fixed;
         top: 0;
@@ -1477,7 +1398,6 @@ html.bg {
         -moz-backface-visibility: hidden;
         backface-visibility: hidden;
     }
-
     .off-screen + * .off-screen-toggle {
         position: absolute;
         top: 0;
@@ -1487,11 +1407,9 @@ html.bg {
         z-index: 1020;
         display: block !important;
     }
-
     .off-screen.pull-right {
         right: 0;
     }
-
     .off-screen.pull-right + * {
         -webkit-transform: translate3d(-75%, 0, 0px);
         transform: translate3d(-75%, 0, 0px);
@@ -1504,22 +1422,18 @@ html.bg {
         margin-right: 0 !important;
         margin-left: 0 !important;
     }
-
     .app-aside-dock .app-aside-footer ~ div {
         padding-bottom: 0;
     }
-
     .app-aside-dock.app-aside-fixed.app-header-fixed {
         padding-top: 115px;
     }
-
     .app-aside-dock.app-aside-fixed .app-aside {
         position: fixed;
         top: 50px;
         z-index: 1000;
         width: 100%;
     }
-
     .app-aside-dock .app-aside,
     .app-aside-dock .aside-wrap,
     .app-aside-dock .navi-wrap {
@@ -1529,46 +1443,37 @@ html.bg {
         width: 100% !important;
         overflow: visible !important;
     }
-
     .app-aside-dock .navi-wrap > * {
         width: auto !important;
     }
-
     .app-aside-dock .app-aside {
         bottom: auto !important;
     }
-
     .app-aside-dock .app-aside.b-r {
         border-bottom: 1px solid #dee5e7;
         border-right-width: 0;
     }
-
     .app-aside-dock .app-aside:before {
         display: none;
     }
-
     .app-aside-dock .app-aside nav > .nav {
         float: left;
     }
-
     .app-aside-dock .app-aside .hidden-folded,
     .app-aside-dock .app-aside .line,
     .app-aside-dock .app-aside .navi-wrap > div {
         display: none !important;
     }
-
     .app-aside-dock .app-aside .navi > ul > li {
         position: relative;
         display: inline-block;
         float: left;
     }
-
     .app-aside-dock .app-aside .navi > ul > li > a {
         height: auto;
         padding: 10px 15px 12px 15px;
         text-align: center;
     }
-
     .app-aside-dock .app-aside .navi > ul > li > a > .badge,
     .app-aside-dock .app-aside .navi > ul > li > a > .label {
         position: absolute;
@@ -1576,7 +1481,6 @@ html.bg {
         right: 8px;
         padding: 1px 4px;
     }
-
     .app-aside-dock .app-aside .navi > ul > li > a > i {
         display: block;
         float: none;
@@ -1588,7 +1492,6 @@ html.bg {
         font-size: 14px;
         line-height: 40px;
     }
-
     .app-aside-dock .app-aside .navi > ul > li > a > span.pull-right {
         position: absolute;
         bottom: 2px;
@@ -1597,25 +1500,21 @@ html.bg {
         margin-left: -6px;
         line-height: 1;
     }
-
     .app-aside-dock .app-aside .navi > ul > li > a > span.pull-right i {
         width: 12px;
         font-size: 12px;
         line-height: 12px;
     }
-
     .app-aside-dock .app-aside .navi > ul > li > a > span.pull-right i.text {
         line-height: 14px;
         -webkit-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
         transform: rotate(90deg);
     }
-
     .app-aside-dock .app-aside .navi > ul > li > a > span {
         display: block;
         font-weight: normal;
     }
-
     .app-aside-dock .app-aside .navi > ul > li .nav-sub {
         position: absolute;
         top: auto !important;
@@ -1627,15 +1526,12 @@ html.bg {
         -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
-
     .app-aside-dock .app-aside .navi > ul > li .nav-sub-header {
         display: none !important;
     }
-
     .app-aside-dock .app-aside .navi li li a {
         padding-left: 15px;
     }
-
     .app-aside-dock .app-aside .navi li:hover > .nav-sub,
     .app-aside-dock .app-aside .navi li:focus > .nav-sub,
     .app-aside-dock .app-aside .navi li:active > .nav-sub {
@@ -1876,7 +1772,7 @@ html.bg {
 .btn {
     font-weight: 500;
     border-radius: 2px;
-    outline: 0 !important;
+    outline: 0!important;
 }
 
 .btn-link {
@@ -5104,7 +5000,6 @@ a.text-#000000:hover {
     .hidden-sm.show {
         display: inherit !important;
     }
-
     .no-m-sm {
         margin: 0 !important;
     }
@@ -5116,76 +5011,59 @@ a.text-#000000:hover {
     .w-auto-xs {
         width: auto;
     }
-
     .shift {
         display: none !important;
     }
-
     .shift.in {
         display: block !important;
     }
-
     .row-2 [class*="col"] {
         float: left;
         width: 50%;
     }
-
     .row-2 .col-0 {
         clear: none;
     }
-
     .row-2 li:nth-child(odd) {
         margin-left: 0;
         clear: left;
     }
-
     .text-center-xs {
         text-align: center;
     }
-
     .text-left-xs {
         text-align: left;
     }
-
     .text-right-xs {
         text-align: right;
     }
-
     .no-border-xs {
         border-width: 0;
     }
-
     .pull-none-xs {
         float: none !important;
     }
-
     .pull-right-xs {
         float: right !important;
     }
-
     .pull-left-xs {
         float: left !important;
     }
-
     .dropdown-menu.pull-none-xs {
         left: 0;
     }
-
     .hidden-xs.show {
         display: inherit !important;
     }
-
     .wrapper-lg,
     .wrapper-md {
         padding: 15px;
     }
-
     .padder-lg,
     .padder-md {
         padding-right: 15px;
         padding-left: 15px;
     }
-
     .no-m-xs {
         margin: 0 !important;
     }
@@ -5342,4 +5220,12 @@ a.text-#000000:hover {
     99.9% {
         background-color: #7266ba;
     }
+}
+
+button.pull-right.visible-xs {
+    height: 50px!important;
+}
+
+.modal-dialog.modal-sm {
+    z-index: 2000;
 }

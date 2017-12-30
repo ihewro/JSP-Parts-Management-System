@@ -50,7 +50,6 @@
                     </div>
                     <div class="panel-body">
                         <form class="form-horizontal" method="post" action="${pageContext.request.contextPath}/servlet/addTransaction">
-                            <input type="hidden" name="customerId" value="<%= ((Login)(request.getSession(true).getAttribute("login"))).getUserId() %>">
                             <input type="hidden" name="created" value="<%
                              java.text.SimpleDateFormat simpleDateFormat = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
                              java.util.Date currentTime = new java.util.Date();
@@ -67,13 +66,14 @@
                                     <span class="help-block m-b-none" id="buy_part_name"></span>
                                     <span class="help-block m-b-none" id="buy_part_num"></span>
                                     <span class="help-block m-b-none" id="buy_part_price"></span>
+                                    <!--<input name="customerId" value="" type="hidden">-->
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <label class="col-sm-2 control-label">选择供应商</label>
                                 <div class="col-sm-10">
-                                    <select name="partId" class="form-control m-b" id="post_supplier_list">
+                                    <select name="supplyId" class="form-control m-b" id="post_supplier_list">
                                         <!--TODO：动态插入供应商，而且还需要更新上面的需求buyId-->
                                     </select>
                                     <span class="help-block m-b-none" id="supply_name"></span>
@@ -83,7 +83,21 @@
                             </div>
                             <div class="line line-dashed b-b line-lg pull-in"></div>
                             <div class="form-group">
-                                <label class="col-sm-2 control-label">交易员建议</label>
+                                <label class="col-sm-2 control-label">建议价格</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control m-b" type="text" placeholder="建议" name="partPrice">
+                                </div>
+                            </div>
+                            <div class="line line-dashed b-b line-lg pull-in"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">建议数量</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control m-b" type="text" placeholder="建议" name="partNum">
+                                </div>
+                            </div>
+                            <div class="line line-dashed b-b line-lg pull-in"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">其他建议</label>
                                 <div class="col-sm-10">
                                     <input class="form-control m-b" type="text" placeholder="建议" name="suggestion">
                                 </div>
@@ -125,15 +139,57 @@
         success: function (data) {
             demandResults = $.parseJSON(data).demandList;
             for (var i = 0; i < demandResults.length; i++){
-                s = "<option position='"+ i+"' value=\"" + demandResults[i].demandId + "\">求购"+ demandResults[i].partName +"</option>";
-                $("#post_demands_list").append(s);
+                if (demandResults[i].status == -2){
+                    s = "<option position='"+ i+"' value=\"" + demandResults[i].demandId + "\">求购"+ demandResults[i].partName +"</option>";
+                    $("#post_demands_list").append(s);
+                }
             }
+
+            //赋初值：
+
+            $("#buy_user_name").text("求购用户: " + demandResults[0].customerName);
+            //$("input[name='customerId']").val(demandResults[0].customerId);
+            $("#buy_part_name").text("求购零件: " + demandResults[0].partName);
+            $("#buy_part_num").text("求购数量: " + demandResults[0].partNum);
+            $("#buy_part_price").text("求购价格: " + demandResults[0].partPrice);
+
+            //动态生成下面的供应商列表
+            $.ajax({
+                url: '../servlet/showSupply?partId=' + demandResults[0].partId,
+                type: 'GET',
+                error: function (data) {
+                    alert("error" + data);
+                    return false;
+                },
+                success: function (data) {
+                    supplyList = $.parseJSON(data).supplyList;
+                    $("#post_supplier_list").html("");
+
+                    for (var i = 0; i < supplyList.length; i++){
+                        //if (supplyList[i].partNum > demandResults[0].partNum){
+                            s = "<option position='"+ i+"' value=\"" + supplyList[i].supplyId + "\">"+ supplyList[i].supplierName +"</option>";
+                            $("#post_supplier_list").append(s);
+
+                        //}
+                    }
+
+                    //初始赋值
+
+                    $("#supply_name").text("供应商名称：" + supplyList[0].supplierName);
+                    $("#supply_price").text("供应价格：" + supplyList[0].partPrice);
+                    $("#supply_num").text("供应数量：" + supplyList[0].partNum);
+                }
+
+            });
         }
     });
 
+
+    /*当需求选项改变*/
     $('#post_demands_list').change(function(){
         var p1=$(this).children('option:selected').attr('position');//这就是selected的值
         $("#buy_user_name").text("求购用户: " + demandResults[p1].customerName);
+        //$("input[name='customerId']").val(demandResults[p1].customerId);
         $("#buy_part_name").text("求购零件: " + demandResults[p1].partName);
         $("#buy_part_num").text("求购数量: " + demandResults[p1].partNum);
         $("#buy_part_price").text("求购价格: " + demandResults[p1].partPrice);
@@ -151,10 +207,11 @@
                 supplyList = $.parseJSON(data).supplyList;
                 $("#post_supplier_list").html("");
                 for (var i = 0; i < supplyList.length; i++){
-                    if (supplyList[i].partNum > demandResults[p1].partNum){
+                    //if (supplyList[i].partNum > demandResults[p1].partNum){
                         s = "<option position='"+ i+"' value=\"" + supplyList[i].supplyId + "\">"+ supplyList[i].supplierName +"</option>";
                         $("#post_supplier_list").append(s);
-                    }
+                        console.log("添加供应商信息+1");
+                    //}
                 }
 
                 //初始赋值
@@ -167,6 +224,7 @@
         });
     });
 
+    /*供应商选项改变*/
     $('#post_supplier_list').change(function(){
         var p2=$(this).children('option:selected').attr('position');//这就是selected的值
         $("#supply_name").text("供应商名称：" + supplyList[p2].supplierName);

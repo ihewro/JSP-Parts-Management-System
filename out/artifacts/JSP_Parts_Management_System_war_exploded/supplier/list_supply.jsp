@@ -38,17 +38,17 @@
 
 
             <div class="bg-light lter b-b wrapper-md">
-                <h1 class="m-n font-thin h3">需求列表</h1>
+                <h1 class="m-n font-thin h3">供应列表</h1>
             </div>
             <div class="wrapper-md">
 
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        需求列表
+                        供应列表
                     </div>
                     <div class="row wrapper">
                         <div class="col-sm-5 m-b-xs">
-                            <button class="btn btn-sm btn-default">添加新需求</button>
+                            <button class="btn btn-sm btn-default">添加新供应</button>
                         </div>
                         <div class="col-sm-4">
                         </div>
@@ -64,11 +64,11 @@
                         <table class="table table-striped b-t b-light">
                             <thead>
                             <tr>
-                                <th>序号</th>
+                                <th>供应序号</th>
                                 <th>商品编号</th>
                                 <th>商品名称</th>
                                 <th>供应数量</th>
-                                <th>求购价格</th>
+                                <th>供应价格</th>
                                 <th>日期</th>
                                 <th>操作</th>
                             </tr>
@@ -190,7 +190,7 @@
             var results = $.parseJSON(data).supplyList;
             for (var i = 0; i < results.length; i++){
                 s = "<tr>" +
-                    '<td>' + parseInt(i+1) + '</td>' +
+                    '<td>' + results[i].supplyId + '</td>' +
                     '<td>' + results[i].partId + '</td>' +
                     '<td>' + results[i].partName + '</td>' +
                     '<td>' + results[i].partNum + '</td>' +

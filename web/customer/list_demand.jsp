@@ -64,12 +64,13 @@
                         <table class="table table-striped b-t b-light">
                             <thead>
                             <tr>
-                                <th>序号</th>
+                                <th>需求序号</th>
                                 <th>商品编号</th>
                                 <th>商品名称</th>
                                 <th>求购数量</th>
                                 <th>求购价格</th>
                                 <th>日期</th>
+                                <th>状态</th>
                                 <th>操作</th>
                             </tr>
                             </thead>
@@ -189,14 +190,26 @@
         success: function (data) {
             var results = $.parseJSON(data).demandList;
             for (var i = 0; i < results.length; i++){
+                var button = '';
+                var status = '';
+                switch (results[i].status){
+                    case -2: button = '<button class="btn btn-default btn-xs" data-toggle="modal" data-target="#modifyModal" data-partid="' + results[i].partId + '" data-partnum="' + results[i].partNum +'" data-partprice="' + results[i].partPrice +'" data-mainid="' + results[i].demandId + '">修改</button><button class="btn btn-default btn-xs" data-toggle="modal" data-target="#deleteModal" data-deleteid="' + results[i].demandId + '">删除</button>';
+                            status = '交易员未处理';break;
+                    case -1: button = '<button class="btn btn-default btn-xs" data-toggle="modal" data-target="#deleteModal" data-deleteid="' + results[i].demandId + '">删除</button>';
+                            status = '交易已处理，等待用户和供应商响应'; break;
+                    case 0: status = '该需求已经关闭';break;
+                    case 1: status = '该需求求购成功';break;
+                    default: button = '';break;
+                }
                 s = "<tr>" +
-                    '<td>' + parseInt(i+1) + '</td>' +
+                    '<td>' + results[i].demandId + '</td>' +
                     '<td>' + results[i].partId + '</td>' +
                     '<td>' + results[i].partName + '</td>' +
                     '<td>' + results[i].partNum + '</td>' +
                     '<td>' + results[i].partPrice + '</td>' +
                     '<td>' + results[i].created + '</td>' +
-                    '<td><button class="btn btn-default btn-xs" data-toggle="modal" data-target="#modifyModal" data-partid="' + results[i].partId + '" data-partnum="' + results[i].partNum +'" data-partprice="' + results[i].partPrice +'" data-mainid="' + parseInt(i+1) + '">修改</button><button class="btn btn-default btn-xs" data-toggle="modal" data-target="#deleteModal" data-deleteid="' + parseInt(i+1) + '">删除</button></td>' +
+                    '<td>' + status + '</td>' +
+                    '<td>' + button +'</td>' +
                     '</tr>';
                 $("#demands_table").append(s);
             }

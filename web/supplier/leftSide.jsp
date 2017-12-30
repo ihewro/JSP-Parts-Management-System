@@ -20,7 +20,7 @@
                     <a href="#" data-toggle="dropdown" class="dropdown-toggle hidden-folded">
                 <span class="clear">
                   <span class="block m-t-sm">
-                    <strong class="font-bold text-lt">John.Smith</strong>
+                    <strong class="font-bold text-lt"><%= ((Login)(request.getSession(true).getAttribute("login"))).getName() %></strong>
                     <b class="caret"></b>
                   </span>
                   <span class="text-muted text-xs block">Art Director</span>
@@ -61,7 +61,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="list_supply.jsp">
+                        <a href="list_transaction.jsp">
                             <i class="fa fa-shopping-cart"></i>
                             <span>订单列表</span>
                         </a>

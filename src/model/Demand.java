@@ -11,6 +11,9 @@ public class Demand {
     double partPrice;
     int partNum;
     String created;
+    //-2代表刚添加交易员未处理，-1代表交易员处理中，用户或者商家还没有全部响应 0代表求购关闭 1代表求购成功
+    int status = -2;
+
 
     public int getCustomerId() {
         return customerId;
@@ -74,5 +77,13 @@ public class Demand {
 
     public void setDemandId(int demandId) {
         this.demandId = demandId;
+    }
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
     }
 }

@@ -48,9 +48,9 @@ public class ShowDemandServlet extends HttpServlet {
         PreparedStatement pStatement = null;
         try {
             if (id == -1){//id为-1代表查询所有用户的需求
-                pStatement = connection.prepareStatement("select partId,partPrice,partNum,created,customId,id from buy");
+                pStatement = connection.prepareStatement("select partId,partPrice,partNum,created,customId,id,status from buy");
             }else{//否则查询某一具体用户的需求
-                pStatement = connection.prepareStatement("select partId,partPrice,partNum,created,customId,id from buy WHERE id=?");
+                pStatement = connection.prepareStatement("select partId,partPrice,partNum,created,customId,id,status from buy WHERE id=?");
                 pStatement.setInt(1,id);
             }
             ResultSet resultSet = pStatement.executeQuery();
@@ -91,7 +91,11 @@ public class ShowDemandServlet extends HttpServlet {
                 rowSet2.last();
                 temp.setCustomerName(rowSet2.getString(1));
 
+                temp.setCustomerId(rowSet.getInt(5));
+
                 temp.setDemandId(rowSet.getInt(6));
+
+                temp.setStatus(rowSet.getInt(7));
 
                 demandList.add(temp);
 
@@ -99,8 +103,6 @@ public class ShowDemandServlet extends HttpServlet {
             }
             demandsJson.setDemandList(demandList);
             demandsJson.setCustomerId(id);
-
-
 
             //关闭数据库连接
             resultSet.close();

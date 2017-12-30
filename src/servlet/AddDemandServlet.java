@@ -32,12 +32,13 @@ public class AddDemandServlet extends HttpServlet {
         try {
             Connection connection = DbConn.getConnection();
             //文章id已经设置为自增，所以在这里就不用管了
-            PreparedStatement pStatement = connection.prepareStatement("insert into buy(customId,partId,partPrice,partNum,created) values(?,?,?,?,?)");
+            PreparedStatement pStatement = connection.prepareStatement("insert into buy(customId,partId,partPrice,partNum,created,status) values(?,?,?,?,?,?)");
             pStatement.setInt(1, customerId);
             pStatement.setInt(2, partId);
             pStatement.setDouble(3, partPrice);
             pStatement.setInt(4, partNum);
             pStatement.setDate(5, DateUtil.stringToDate(dateString));
+            pStatement.setInt(6,-2);//默认都是-2，代表刚添加
 
             pStatement.executeUpdate();
 

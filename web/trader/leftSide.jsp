@@ -12,7 +12,7 @@
             <!-- user -->
             <div class="clearfix hidden-xs text-center show" id="aside-user">
                 <div class="dropdown wrapper">
-                    <a href="app.page.profile">
+                    <a href="#">
                 <span class="thumb-lg w-auto-folded avatar m-t-sm">
                   <img src="../assets/img/avatar.jpeg" class="img-full" alt="...">
                 </span>
@@ -20,10 +20,9 @@
                     <a href="#" data-toggle="dropdown" class="dropdown-toggle hidden-folded">
                 <span class="clear">
                   <span class="block m-t-sm">
-                    <strong class="font-bold text-lt">John.Smith</strong>
+                    <strong class="font-bold text-lt"><%= ((Login)(request.getSession(true).getAttribute("login"))).getName() %></strong>
                     <b class="caret"></b>
                   </span>
-                  <span class="text-muted text-xs block">Art Director</span>
                 </span>
                     </a>
                 </div>
@@ -56,12 +55,6 @@
                     </li>
                     <li>
                         <a href="list_transaction.jsp">
-                            <i class="fa fa-list-ol"></i>
-                            <span>供应列表</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="list_supply.jsp">
                             <i class="fa fa-shopping-cart"></i>
                             <span>订单列表</span>
                         </a>

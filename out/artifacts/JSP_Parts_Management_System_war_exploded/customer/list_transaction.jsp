@@ -144,25 +144,23 @@
                 var customerStatus;
                 var supplierStatus;
                 var button;
-
                 switch (results[i].customerStatus){
-                    case -1: customerStatus = "待确认";break;
-                    case 0: customerStatus = "拒绝";break;
-                    case 1: customerStatus = "同意";break;
+                    case -1: customerStatus = "待确认";button='<button class="btn btn-default btn-xs" data-toggle="modal" data-target="#confirmModal" data-transactionid="' + results[i].transactionId + '">同意</button><button class="btn btn-default btn-xs" data-toggle="modal" data-target="#refuseModal" data-transactionid="' + results[i].transactionId + '">拒绝</button>';break;
+                    case 0: customerStatus = "拒绝";button='<button class="btn btn-default btn-xs" data-toggle="modal" data-target="#confirmModal" data-transactionid="' + results[i].transactionId + '">同意</button>';break;
+                    case 1: customerStatus = "同意";
+                    if (results[i].supplierStatus === 1){
+                        button = '';//两个人都同意的情况下禁止再次更改了
+                    }else{
+                        button='<button class="btn btn-default btn-xs" data-toggle="modal" data-target="#refuseModal" data-transactionid="' + results[i].transactionId + '">拒绝</button>';break;
+                    }
                     default:break;
                 }
                 switch (results[i].supplierStatus){
-                    case -1: supplierStatus = "待确认";button='<button class="btn btn-default btn-xs" data-toggle="modal" data-target="#confirmModal" data-transactionid="' + results[i].transactionId + '">同意</button><button class="btn btn-default btn-xs" data-toggle="modal" data-target="#refuseModal" data-transactionid="' + results[i].transactionId + '">拒绝</button>';break;
-                    case 0: supplierStatus = "拒绝";button='<button class="btn btn-default btn-xs" data-toggle="modal" data-target="#confirmModal" data-transactionid="' + results[i].transactionId + '">同意</button>';break;
-                    case 1: supplierStatus = "同意";
-                        if (results[i].customerStatus == 1){
-                            button = '';//两个人都同意的情况下禁止再次更改
-                        }else{
-                            button='<button class="btn btn-default btn-xs" data-toggle="modal" data-target="#refuseModal" data-transactionid="' + results[i].transactionId + '">拒绝</button>';break;
-                        }
+                    case -1: supplierStatus = "待确认";break;
+                    case 0: supplierStatus = "拒绝";break;
+                    case 1: supplierStatus = "同意";break;
                     default:break;
                 }
-
                 s = "<tr>" +
                     '<td>' + results[i].buyId + '</td>' +
                     '<td>' + results[i].partId + '</td>' +
@@ -189,7 +187,7 @@
             $.ajax({
                 url: '../servlet/confirmTransaction',
                 type: 'POST',
-                data: {transactionId:transactionId,flag:1},
+                data: {transactionId:transactionId,flag:0},
                 error: function (data) {
                     console.log(data);
                     return false;
@@ -213,7 +211,7 @@
             $.ajax({
                 url: '../servlet/refuseTransaction',
                 type: 'POST',
-                data: {transactionId:transactionId,flag:1},
+                data: {transactionId:transactionId,flag:0},
                 error: function (data) {
                     console.log(data);
                     return false;

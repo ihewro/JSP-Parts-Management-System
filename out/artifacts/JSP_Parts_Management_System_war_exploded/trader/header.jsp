@@ -6,6 +6,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="model.Login" %>
+
 <header id="header" class="app-header navbar" role="menu">
     <!-- navbar header -->
     <div class="navbar-header bg-dark">
@@ -47,7 +49,7 @@
                 <img src="../assets/img/avatar.jpeg" alt="...">
                 <i class="on md b-white bottom"></i>
               </span>
-                    <span class="hidden-sm hidden-md">John.Smith</span> <b class="caret"></b>
+                    <span class="hidden-sm hidden-md"><%= ((Login)(request.getSession(true).getAttribute("login"))).getName() %></span> <b class="caret"></b>
                 </a>
                 <!-- dropdown -->
                 <ul class="dropdown-menu animated fadeInRight w">

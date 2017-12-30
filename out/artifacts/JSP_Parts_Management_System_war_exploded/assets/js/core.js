@@ -166,7 +166,7 @@ var initTheme = function () {
     isIE && $('html').addClass('ie');
 
     // Checks for iOs, Android, Blackberry, Opera Mini, and Windows mobile devices
-    /*var ua = window['navigator']['userAgent'] || window['navigator']['vendor'] || window['opera'];
-    (/iPhone|iPod|iPad|Silk|Android|BlackBerry|Opera Mini|IEMobile/).test(ua) && $('html').addClass('smart');*/
+    var ua = window['navigator']['userAgent'] || window['navigator']['vendor'] || window['opera'];
+    (/iPhone|iPod|iPad|Silk|Android|BlackBerry|Opera Mini|IEMobile/).test(ua) && $('html').addClass('smart');
 
 };

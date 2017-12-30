@@ -6,9 +6,11 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="model.Login" %>
+
 <html>
 <head>
-    <title>零件交易中心管理系统——用户页面</title>
+    <title>零件交易中心管理系统——供应商页面</title>
 
     <%@ include file="../header.jsp" %>
 

@@ -12,6 +12,15 @@
         © 2017 Copyright.
     </div>
 </footer>
+</div>
+
+<style>
+    @media (max-width: 767px) {
+        footer{
+            display: none;
+        }
+    }
+</style>
 
 <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
@@ -19,3 +28,5 @@
 <script src="../assets/js/function.js"></script>
 <script src="../assets/js/core.js"></script>
 
+</body>
+</html>

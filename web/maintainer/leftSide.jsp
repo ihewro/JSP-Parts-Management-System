@@ -1,4 +1,4 @@
-<%--
+<%@ page import="model.Login" %><%--
   Created by IntelliJ IDEA.
   User: hewro
   Date: 2017/12/27
@@ -20,7 +20,7 @@
                     <a href="#" data-toggle="dropdown" class="dropdown-toggle hidden-folded">
                 <span class="clear">
                   <span class="block m-t-sm">
-                    <strong class="font-bold text-lt">John.Smith</strong>
+                    <strong class="font-bold text-lt"><%= ((Login)(request.getSession(true).getAttribute("login"))).getName() %></strong>
                     <b class="caret"></b>
                   </span>
                   <span class="text-muted text-xs block">Art Director</span>

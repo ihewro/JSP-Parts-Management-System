@@ -7,71 +7,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e4b26af-980f-4f3d-a42e-7728e81ab9e2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/Transaction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/TransactionJson.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/servlet/ConfirmTransactionsServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/servlet/RefuseTransactionServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/servlet/ShowTransactionServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/list_transaction.jsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/assets/css/frame.css" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/servlet/addTransactionServlet.java" afterPath="$PROJECT_DIR$/src/servlet/AddTransactionServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/assets/css/frame.css" afterPath="$PROJECT_DIR$/web/assets/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/4aa7f815-dca2-42f1-b50e-6ec54ddde9b4.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/4aa7f815-dca2-42f1-b50e-6ec54ddde9b4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/Table.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/servlet/ShowTableStatisticsServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/servlet/modifyUserInfoServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/leftSide.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/modify.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/assets/css/function.css" afterPath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/assets/css/function.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/assets/js/core.js" afterPath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/assets/js/core.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/customer/content.jsp" afterPath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/customer/content.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/customer/dashboard.jsp" afterPath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/customer/dashboard.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/customer/header.jsp" afterPath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/customer/header.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/customer/leftSide.jsp" afterPath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/customer/leftSide.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/customer/list_demand.jsp" afterPath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/customer/list_demand.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/customer/rightSide.jsp" afterPath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/customer/rightSide.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/footer.jsp" afterPath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/footer.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/header.jsp" afterPath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/header.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/maintainer/content.jsp" afterPath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/maintainer/content.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/maintainer/header.jsp" afterPath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/maintainer/header.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/maintainer/leftSide.jsp" afterPath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/maintainer/leftSide.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/supplier/content.jsp" afterPath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/supplier/content.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/supplier/dashboard.jsp" afterPath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/supplier/dashboard.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/supplier/header.jsp" afterPath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/supplier/header.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/supplier/leftSide.jsp" afterPath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/supplier/leftSide.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/supplier/list_supply.jsp" afterPath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/supplier/list_supply.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/supplier/list_transaction.jsp" afterPath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/supplier/list_transaction.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/supplier/rightSide.jsp" afterPath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/supplier/rightSide.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/trader/content.jsp" afterPath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/trader/content.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/trader/dashboard.jsp" afterPath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/trader/dashboard.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/trader/header.jsp" afterPath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/trader/header.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/trader/leftSide.jsp" afterPath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/trader/leftSide.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/trader/list_transaction.jsp" afterPath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/trader/list_transaction.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/trader/post_transaction.jsp" afterPath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/trader/post_transaction.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Demand.java" afterPath="$PROJECT_DIR$/src/model/Demand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/AddDemandServlet.java" afterPath="$PROJECT_DIR$/src/servlet/AddDemandServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/ShowDemandServlet.java" afterPath="$PROJECT_DIR$/src/servlet/ShowDemandServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/css/function.css" afterPath="$PROJECT_DIR$/web/assets/css/function.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/core.js" afterPath="$PROJECT_DIR$/web/assets/js/core.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/trader/rightSide.jsp" afterPath="$PROJECT_DIR$/out/artifacts/JSP_Parts_Management_System_war_exploded/trader/rightSide.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Login.java" afterPath="$PROJECT_DIR$/src/model/Login.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/LoginServlet.java" afterPath="$PROJECT_DIR$/src/servlet/LoginServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/customer/content.jsp" afterPath="$PROJECT_DIR$/web/customer/content.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/customer/dashboard.jsp" afterPath="$PROJECT_DIR$/web/customer/dashboard.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/customer/header.jsp" afterPath="$PROJECT_DIR$/web/customer/header.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/customer/leftSide.jsp" afterPath="$PROJECT_DIR$/web/customer/leftSide.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/customer/list_demand.jsp" afterPath="$PROJECT_DIR$/web/customer/list_demand.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/customer/rightSide.jsp" afterPath="$PROJECT_DIR$/web/customer/rightSide.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/footer.jsp" afterPath="$PROJECT_DIR$/web/footer.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/header.jsp" afterPath="$PROJECT_DIR$/web/header.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/maintainer/content.jsp" afterPath="$PROJECT_DIR$/web/maintainer/content.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/maintainer/header.jsp" afterPath="$PROJECT_DIR$/web/maintainer/header.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/maintainer/leftSide.jsp" afterPath="$PROJECT_DIR$/web/maintainer/leftSide.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/supplier/content.jsp" afterPath="$PROJECT_DIR$/web/supplier/content.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/supplier/dashboard.jsp" afterPath="$PROJECT_DIR$/web/supplier/dashboard.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/supplier/header.jsp" afterPath="$PROJECT_DIR$/web/supplier/header.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/supplier/leftSide.jsp" afterPath="$PROJECT_DIR$/web/supplier/leftSide.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/supplier/list_supply.jsp" afterPath="$PROJECT_DIR$/web/supplier/list_supply.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/supplier/list_transaction.jsp" afterPath="$PROJECT_DIR$/web/supplier/list_transaction.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/supplier/rightSide.jsp" afterPath="$PROJECT_DIR$/web/supplier/rightSide.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/trader/content.jsp" afterPath="$PROJECT_DIR$/web/trader/content.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/trader/dashboard.jsp" afterPath="$PROJECT_DIR$/web/trader/dashboard.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/trader/header.jsp" afterPath="$PROJECT_DIR$/web/trader/header.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/trader/leftSide.jsp" afterPath="$PROJECT_DIR$/web/trader/leftSide.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/trader/list_transaction.jsp" afterPath="$PROJECT_DIR$/web/trader/list_transaction.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/trader/post_transaction.jsp" afterPath="$PROJECT_DIR$/web/trader/post_transaction.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/trader/rightSide.jsp" afterPath="$PROJECT_DIR$/web/trader/rightSide.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -143,122 +111,96 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="header.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/customer/header.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="content.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/trader/content.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="76" column="22" lean-forward="true" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="dashboard.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/customer/dashboard.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="263">
+              <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="content.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/supplier/content.jsp">
+      <file leaf-file-name="header.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/customer/header.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1095">
-              <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+            <state relative-caret-position="175">
+              <caret line="44" column="48" lean-forward="true" selection-start-line="44" selection-start-column="48" selection-end-line="44" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="leftSide.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/customer/leftSide.jsp">
+        <entry file="file://$PROJECT_DIR$/web/supplier/leftSide.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="19" column="57" lean-forward="true" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
+            <state relative-caret-position="191">
+              <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/supplier/header.jsp">
+      <file leaf-file-name="modify.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/modify.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dashboard.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/supplier/dashboard.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RefuseTransactionServlet.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/servlet/RefuseTransactionServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="63" column="13" lean-forward="true" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
+            <state relative-caret-position="1850">
+              <caret line="223" column="20" lean-forward="false" selection-start-line="223" selection-start-column="20" selection-end-line="223" selection-end-column="20" />
               <folding>
-                <marker date="1514637357890" expanded="true" signature="1282:1334" ph="update trans... " />
-                <marker date="1514637357890" expanded="true" signature="1416:1468" ph="update trans... " />
-                <marker date="1514637357890" expanded="true" signature="1754:1809" ph="select suppl... transaction" />
-                <marker date="1514637357890" expanded="true" signature="1890:1945" ph="select custo... transaction" />
-                <marker date="1514637357890" expanded="true" signature="2340:2376" ph="update buy s... " />
+                <element signature="n#style#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#2;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#2;n#tr#2;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConfirmTransactionsServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/servlet/ConfirmTransactionsServlet.java">
+      <file leaf-file-name="list_demand.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/customer/list_demand.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="44" column="11" lean-forward="true" selection-start-line="44" selection-start-column="11" selection-end-line="63" selection-end-column="13" />
+            <state relative-caret-position="-312">
+              <caret line="261" column="0" lean-forward="true" selection-start-line="261" selection-start-column="0" selection-end-line="261" selection-end-column="0" />
               <folding>
-                <marker date="1514637313360" expanded="true" signature="1288:1340" ph="update suppl... " />
-                <marker date="1514637313360" expanded="true" signature="1422:1474" ph="update trans... " />
-                <marker date="1514637313360" expanded="true" signature="1759:1791" ph="select * fro... " />
-                <marker date="1514637313360" expanded="true" signature="1759:1803" ph="select * fro... transaction" />
-                <marker date="1514637313360" expanded="true" signature="1759:1814" ph="select suppl... transaction" />
-                <marker date="1514637313360" expanded="true" signature="1759:1816" ph="select * fro... transaction" />
-                <marker date="1514637313360" expanded="true" signature="1895:1950" ph="select custo... transaction" />
-                <marker date="1514637313360" expanded="true" signature="2345:2381" ph="update buy s... " />
+                <element signature="n#div#4;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShowDemandServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/servlet/ShowDemandServlet.java">
+      <file leaf-file-name="modifyUserInfoServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/servlet/modifyUserInfoServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="58" column="39" lean-forward="true" selection-start-line="55" selection-start-column="12" selection-end-line="58" selection-end-column="39" />
+            <state relative-caret-position="144">
+              <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
               <folding>
-                <marker date="1514607067921" expanded="true" signature="1650:1717" ph="select partI... buy" />
-                <marker date="1514607067921" expanded="true" signature="1813:1880" ph="select custo... buy" />
-                <marker date="1514607067921" expanded="true" signature="1813:1891" ph="select partI... buy" />
-                <marker date="1514607067921" expanded="true" signature="2683:2718" ph="select name parts" />
-                <marker date="1514607067921" expanded="true" signature="3136:3174" ph="select name customer" />
+                <marker date="1514647122548" expanded="true" signature="1308:1315" ph="update missi... " />
+                <marker date="1514647122548" expanded="true" signature="1308:1349" ph="update buy s... " />
+                <marker date="1514647122548" expanded="true" signature="1454:1500" ph="update buy s... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginServlet.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/servlet/LoginServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="359">
+              <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+              <folding>
+                <marker date="1514647467375" expanded="true" signature="2744:2810" ph="select name,... missingValue" />
               </folding>
             </state>
           </provider>
@@ -271,31 +213,14 @@
       <list>
         <option value="JavaScript File" />
         <option value="CSS File" />
-        <option value="Jsp File" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>list_</find>
-      <find>showTransaction</find>
-      <find>?userId</find>
-      <find>&lt;table class=&quot;table table-striped b-t b-light&quot;&gt;</find>
-      <find>userId</find>
-      <find>data-mainid</find>
-      <find>customerName</find>
-      <find>customerId</find>
-      <find>supplyId</find>
-      <find>post_supplier_list</find>
-      <find>post_demands_list</find>
-      <find>confirmModal</find>
-      <find>buyId</find>
-      <find>mainId</find>
-      <find>deleteModal</find>
-      <find>(Login)</find>
-      <find>John.Smith</find>
       <find>&lt;%= ((Login)(request.getSession(true).getAttribute(&quot;login&quot;))).getName() %&gt;</find>
       <find>&lt;%= ((Login)(request.getSession(true).getAttribute(&quot;login&quot;))).</find>
       <find>\&lt;\%\@ page import\=\&quot;model\.Login\&quot; \%\&gt;\&lt;\%\-\-\n</find>
@@ -305,13 +230,31 @@
       <find>col dk padder-v r-r</find>
       <find>col-xs-12 m-b-md</find>
       <find>Art Director</find>
-      <find>app.page.profile</find>
       <find>class=&quot;panel wrapper&quot;</find>
-      <find>最近活动</find>
       <find>dropdown</find>
+      <find>零件销售管理系统（用户界面）</find>
+      <find>login</find>
+      <find>最近活动</find>
+      <find>type</find>
+      <find>get</find>
+      <find>app.page.profile</find>
+      <find>交易数目</find>
+      <find>修改</find>
+      <find>modifyModal</find>
+      <find>mainId</find>
+      <find>admin</find>
+      <find>remove</find>
+      <find>Login</find>
+      <find>session3</find>
+      <find>delete</find>
+      <find>flag</find>
+      <find>window.location.reload</find>
+      <find>window.location.reload(/Users/hewro/Documents/JSP-Parts-Management-System/web/modify.jsp</find>
+      <find>insert_tips</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;%= ((Login)(request.getSession(true).getAttribute(&quot;login&quot;))).getName() %&gt;</replace>
+      <replace>../modify.jsp</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -325,16 +268,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/servlet/AddSupplyServlet.java" />
-        <option value="$PROJECT_DIR$/src/model/SuppliesJson.java" />
-        <option value="$PROJECT_DIR$/src/servlet/ModifySupplyServlet.java" />
-        <option value="$PROJECT_DIR$/src/servlet/DeleteSupplyServlet.java" />
-        <option value="$PROJECT_DIR$/web/trader/post_transcation.jsp" />
-        <option value="$PROJECT_DIR$/src/util/DbConn.java" />
-        <option value="$PROJECT_DIR$/src/model/Part.java" />
-        <option value="$PROJECT_DIR$/src/servlet/ShowPartsServlet.java" />
-        <option value="$PROJECT_DIR$/web/customer/post_demand.jsp" />
-        <option value="$PROJECT_DIR$/web/supplier/post_supply.jsp" />
         <option value="$PROJECT_DIR$/src/model/Supply.java" />
         <option value="$PROJECT_DIR$/src/servlet/ShowSupplyServlet.java" />
         <option value="$PROJECT_DIR$/src/servlet/ConfermTranscationServlet.java" />
@@ -353,29 +286,39 @@
         <option value="$PROJECT_DIR$/web/supplier/list_supply.jsp" />
         <option value="$PROJECT_DIR$/web/customer/list_transaction.jsp" />
         <option value="$PROJECT_DIR$/web/supplier/list_transaction.jsp" />
-        <option value="$PROJECT_DIR$/web/supplier/leftSide.jsp" />
         <option value="$PROJECT_DIR$/web/trader/header.jsp" />
         <option value="$PROJECT_DIR$/web/assets/css/frame.css" />
         <option value="$PROJECT_DIR$/web/customer/index.html" />
         <option value="$PROJECT_DIR$/web/assets/js/core.js" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/web/header.jsp" />
         <option value="$PROJECT_DIR$/web/assets/css/function.css" />
-        <option value="$PROJECT_DIR$/web/customer/dashboard.jsp" />
-        <option value="$PROJECT_DIR$/web/footer.jsp" />
         <option value="$PROJECT_DIR$/web/trader/leftSide.jsp" />
-        <option value="$PROJECT_DIR$/web/customer/leftSide.jsp" />
         <option value="$PROJECT_DIR$/web/maintainer/leftSide.jsp" />
-        <option value="$PROJECT_DIR$/web/supplier/content.jsp" />
-        <option value="$PROJECT_DIR$/web/customer/content.jsp" />
-        <option value="$PROJECT_DIR$/web/maintainer/content.jsp" />
-        <option value="$PROJECT_DIR$/web/trader/content.jsp" />
         <option value="$PROJECT_DIR$/web/assets/css/app.css" />
         <option value="$PROJECT_DIR$/web/customer/header.jsp" />
         <option value="$PROJECT_DIR$/web/supplier/header.jsp" />
         <option value="$PROJECT_DIR$/web/supplier/dashboard.jsp" />
         <option value="$PROJECT_DIR$/src/servlet/ConfirmTransactionsServlet.java" />
         <option value="$PROJECT_DIR$/src/servlet/RefuseTransactionServlet.java" />
+        <option value="$PROJECT_DIR$/web/maintainer/content.jsp" />
+        <option value="$PROJECT_DIR$/src/model/Login.java" />
+        <option value="$PROJECT_DIR$/web/customer/rightSide.jsp" />
+        <option value="$PROJECT_DIR$/web/supplier/rightSide.jsp" />
+        <option value="$PROJECT_DIR$/web/trader/rightSide.jsp" />
+        <option value="$PROJECT_DIR$/src/model/Table.java" />
+        <option value="$PROJECT_DIR$/src/servlet/ShowTableStatisticsServlet.java" />
+        <option value="$PROJECT_DIR$/web/customer/content.jsp" />
+        <option value="$PROJECT_DIR$/web/supplier/content.jsp" />
+        <option value="$PROJECT_DIR$/web/trader/content.jsp" />
+        <option value="$PROJECT_DIR$/web/footer.jsp" />
+        <option value="$PROJECT_DIR$/web/leftSide.jsp" />
+        <option value="$PROJECT_DIR$/web/supplier/leftSide.jsp" />
+        <option value="$PROJECT_DIR$/web/customer/leftSide.jsp" />
+        <option value="$PROJECT_DIR$/web/header.jsp" />
+        <option value="$PROJECT_DIR$/src/servlet/modifyUserInfoServlet.java" />
+        <option value="$PROJECT_DIR$/web/modify.jsp" />
+        <option value="$PROJECT_DIR$/web/customer/dashboard.jsp" />
+        <option value="$PROJECT_DIR$/src/servlet/LoginServlet.java" />
       </list>
     </option>
   </component>
@@ -398,9 +341,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
-    <option name="width" value="1680" />
+    <option name="width" value="840" />
     <option name="height" value="957" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -455,45 +398,7 @@
               <item name="JSP-Parts-Management-System" type="b2602c69:ProjectViewProjectNode" />
               <item name="JSP-Parts-Management-System" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JSP-Parts-Management-System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JSP-Parts-Management-System" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JSP-Parts-Management-System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JSP-Parts-Management-System" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JSP-Parts-Management-System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JSP-Parts-Management-System" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="customer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JSP-Parts-Management-System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JSP-Parts-Management-System" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="supplier" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JSP-Parts-Management-System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JSP-Parts-Management-System" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="trader" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JSP-Parts-Management-System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JSP-Parts-Management-System" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JSP-Parts-Management-System" type="b2602c69:ProjectViewProjectNode" />
@@ -756,12 +661,12 @@
       <workItem from="1514519701388" duration="23261000" />
       <workItem from="1514554123457" duration="22447000" />
       <workItem from="1514620098120" duration="3679000" />
-      <workItem from="1514624148054" duration="3663000" />
+      <workItem from="1514624148054" duration="13264000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123386000" />
+    <option name="totallyTimeSpent" value="132987000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -773,7 +678,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="957" extended-state="0" />
+    <frame x="0" y="23" width="1680" height="957" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -781,14 +686,14 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4233056" sideWeight="0.36752138" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991952" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28537455" sideWeight="0.5543346" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53745544" sideWeight="0.5543346" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32661784" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24969475" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3745541" sideWeight="0.4920635" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3745541" sideWeight="0.4920635" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936978" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32818073" sideWeight="0.497558" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -798,8 +703,8 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42687276" sideWeight="0.63003665" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.4927798" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2026862" sideWeight="0.62046206" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23687424" sideWeight="0.37953794" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1935287" sideWeight="0.6026616" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1935287" sideWeight="0.3973384" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17277168" sideWeight="0.3663717" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32818073" sideWeight="0.497558" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -815,11 +720,11 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27942926" sideWeight="0.44566545" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27942926" sideWeight="0.44566545" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4233056" sideWeight="0.36752138" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991952" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5659929" sideWeight="0.5543346" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28537455" sideWeight="0.5543346" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -838,8 +743,8 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42687276" sideWeight="0.63003665" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.4927798" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2026862" sideWeight="0.62046206" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23687424" sideWeight="0.37953794" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3972431" sideWeight="0.6123128" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2026862" sideWeight="0.38768718" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17277168" sideWeight="0.3663717" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32818073" sideWeight="0.497558" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -857,7 +762,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="17" />
+      <option name="time" value="22" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -866,103 +771,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/servlet/ShowSupplyServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
-          <folding>
-            <marker date="1514547255511" expanded="true" signature="1618:1683" ph="select partI... supply" />
-            <marker date="1514547255511" expanded="true" signature="1779:1859" ph="select partI... supply" />
-            <marker date="1514547255511" expanded="true" signature="2654:2689" ph="select name parts" />
-            <marker date="1514547255511" expanded="true" signature="3161:3199" ph="select name supplier" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/AddSupplyServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="48" selection-end-column="5" />
-          <folding>
-            <marker date="1514541620721" expanded="true" signature="1365:1446" ph="insert into supply... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/customer/post_demand.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="81" column="37" lean-forward="false" selection-start-line="81" selection-start-column="37" selection-end-line="81" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="53" column="53" lean-forward="false" selection-start-line="53" selection-start-column="42" selection-end-line="53" selection-end-column="53" />
-          <folding>
-            <marker date="1514539290206" expanded="true" signature="2695:2758" ph="select name,... missingValue" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/DemandsJson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/ShowPartsServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
-          <caret line="74" column="9" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="74" selection-end-column="9" />
-          <folding>
-            <marker date="1514546204455" expanded="true" signature="1383:1434" ph="select id,co... parts" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Library/tomcat/lib/servlet-api.jar!/javax/servlet/http/HttpServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="233" column="0" lean-forward="false" selection-start-line="233" selection-start-column="0" selection-end-line="233" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/TransactionJson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="29" column="28" lean-forward="false" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#613#614#0" expanded="false" />
-            <element signature="e#654#655#0" expanded="false" />
-            <element signature="e#690#691#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/trader/list_transaction.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1078">
-          <caret line="136" column="7" lean-forward="false" selection-start-line="136" selection-start-column="7" selection-end-line="136" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/AddDemandServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="34" column="96" lean-forward="false" selection-start-line="34" selection-start-column="88" selection-end-line="34" selection-end-column="96" />
-          <folding>
-            <marker date="1514607034248" expanded="true" signature="1395:1480" ph="insert into buy... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://src:table:/1adadf61/4aa7f815-dca2-42f1-b50e-6ec54ddde9b4/management.buy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -970,34 +778,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/ShowTransactionServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="37" column="58" lean-forward="false" selection-start-line="37" selection-start-column="58" selection-end-line="37" selection-end-column="58" />
-          <folding>
-            <marker date="1514613642767" expanded="true" signature="1614:1621" ph="SELECT * fro... transaction" />
-            <marker date="1514613642767" expanded="true" signature="1614:2008" ph="SELECT sugge... transaction" />
-            <marker date="1514613642767" expanded="true" signature="1614:2009" ph="SELECT sugge... transaction" />
-            <marker date="1514613642767" expanded="true" signature="1614:2018" ph="SELECT * fro... transaction" />
-            <marker date="1514613642767" expanded="true" signature="2098:2475" ph="SELECT * fro... transaction" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://src:table:/1adadf61/4aa7f815-dca2-42f1-b50e-6ec54ddde9b4/management.transaction">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/ModifyDemandServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding>
-            <marker date="1514532883756" expanded="true" signature="1433:1495" ph="update buy s... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1026,17 +810,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/AddTransactionServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="32" column="36" lean-forward="false" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-          <folding>
-            <marker date="1514616792376" expanded="true" signature="1377:1497" ph="insert into supply... " />
-            <marker date="1514616792376" expanded="true" signature="2060:2096" ph="update buy s... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/supplier/list_supply.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
@@ -1057,54 +830,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="13" column="60" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/customer/list_transaction.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3195">
-          <caret line="213" column="57" lean-forward="false" selection-start-line="213" selection-start-column="57" selection-end-line="213" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/trader/dashboard.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/supplier/leftSide.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="63" lean-forward="false" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/customer/list_demand.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="36" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/trader/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -1148,34 +873,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/supplier/rightSide.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1890">
-          <caret line="126" column="12" lean-forward="false" selection-start-line="126" selection-start-column="12" selection-end-line="126" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/assets/js/core.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2445">
           <caret line="163" column="20" lean-forward="false" selection-start-line="163" selection-start-column="20" selection-end-line="163" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="48" lean-forward="false" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
           <folding />
         </state>
       </provider>
@@ -1188,58 +889,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/footer.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="7" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/trader/leftSide.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
           <caret line="41" column="61" lean-forward="true" selection-start-line="41" selection-start-column="61" selection-end-line="41" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/customer/content.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/trader/content.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="76" column="22" lean-forward="true" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4818">
-          <caret line="5230" column="1" lean-forward="false" selection-start-line="5230" selection-start-column="1" selection-end-line="5230" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/maintainer/content.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/customer/rightSide.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -1252,30 +905,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/customer/leftSide.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="19" column="57" lean-forward="true" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/customer/dashboard.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/customer/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/supplier/header.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1284,33 +913,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/supplier/dashboard.jsp">
+    <entry file="file://$PROJECT_DIR$/src/servlet/RefuseTransactionServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/supplier/content.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1095">
-          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/ShowDemandServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="58" column="39" lean-forward="true" selection-start-line="55" selection-start-column="12" selection-end-line="58" selection-end-column="39" />
+        <state relative-caret-position="460">
+          <caret line="63" column="13" lean-forward="true" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
           <folding>
-            <marker date="1514607067921" expanded="true" signature="1650:1717" ph="select partI... buy" />
-            <marker date="1514607067921" expanded="true" signature="1813:1880" ph="select custo... buy" />
-            <marker date="1514607067921" expanded="true" signature="1813:1891" ph="select partI... buy" />
-            <marker date="1514607067921" expanded="true" signature="2683:2718" ph="select name parts" />
-            <marker date="1514607067921" expanded="true" signature="3136:3174" ph="select name customer" />
+            <marker date="1514637357890" expanded="true" signature="1282:1334" ph="update trans... " />
+            <marker date="1514637357890" expanded="true" signature="1416:1468" ph="update trans... " />
+            <marker date="1514637357890" expanded="true" signature="1754:1809" ph="select suppl... transaction" />
+            <marker date="1514637357890" expanded="true" signature="1890:1945" ph="select custo... transaction" />
+            <marker date="1514637357890" expanded="true" signature="2340:2376" ph="update buy s... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/maintainer/content.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="34" column="88" lean-forward="true" selection-start-line="34" selection-start-column="88" selection-end-line="34" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/trader/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="51" column="128" lean-forward="true" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="128" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1331,16 +960,315 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/RefuseTransactionServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/servlet/ShowSupplyServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="63" column="13" lean-forward="true" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
+        <state relative-caret-position="307">
+          <caret line="42" column="25" lean-forward="false" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="25" />
           <folding>
-            <marker date="1514637357890" expanded="true" signature="1282:1334" ph="update trans... " />
-            <marker date="1514637357890" expanded="true" signature="1416:1468" ph="update trans... " />
-            <marker date="1514637357890" expanded="true" signature="1754:1809" ph="select suppl... transaction" />
-            <marker date="1514637357890" expanded="true" signature="1890:1945" ph="select custo... transaction" />
-            <marker date="1514637357890" expanded="true" signature="2340:2376" ph="update buy s... " />
+            <marker date="1514547255511" expanded="true" signature="1618:1683" ph="select partI... supply" />
+            <marker date="1514547255511" expanded="true" signature="1779:1859" ph="select partI... supply" />
+            <marker date="1514547255511" expanded="true" signature="2654:2689" ph="select name parts" />
+            <marker date="1514547255511" expanded="true" signature="3161:3199" ph="select name supplier" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/supplier/rightSide.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="6" lean-forward="false" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/trader/rightSide.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="6" lean-forward="false" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="23" />
+          <folding>
+            <element signature="e#784#785#0" expanded="true" />
+            <element signature="e#815#816#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/ShowTransactionServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="52" column="12" lean-forward="true" selection-start-line="52" selection-start-column="12" selection-end-line="55" selection-end-column="39" />
+          <folding>
+            <marker date="1514613642767" expanded="true" signature="1614:1621" ph="SELECT * fro... transaction" />
+            <marker date="1514613642767" expanded="true" signature="1614:2008" ph="SELECT sugge... transaction" />
+            <marker date="1514613642767" expanded="true" signature="1614:2009" ph="SELECT sugge... transaction" />
+            <marker date="1514613642767" expanded="true" signature="1614:2018" ph="SELECT * fro... transaction" />
+            <marker date="1514613642767" expanded="true" signature="2098:2475" ph="SELECT * fro... transaction" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/DeleteSupplyServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <marker date="1514542616963" expanded="true" signature="1068:1097" ph="delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/AddTransactionServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="25" column="63" lean-forward="true" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
+          <folding>
+            <marker date="1514616792376" expanded="true" signature="1377:1497" ph="insert into supply... " />
+            <marker date="1514616792376" expanded="true" signature="2060:2096" ph="update buy s... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Table.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/ShowTableStatisticsServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+          <folding>
+            <marker date="1514640673157" expanded="true" signature="1522:1547" ph="SELECT sugge... transaction" />
+            <marker date="1514640673157" expanded="true" signature="1817:1847" ph="SELECT COUNT... customer" />
+            <marker date="1514640673157" expanded="true" signature="2122:2152" ph="SELECT COUNT... supplier" />
+            <marker date="1514640673157" expanded="true" signature="2427:2455" ph="SELECT COUNT... supply" />
+            <marker date="1514640673157" expanded="true" signature="2728:2756" ph="SELECT COUNT... trader" />
+            <marker date="1514640673157" expanded="true" signature="3028:3050" ph="SELECT COUNT... supply" />
+            <marker date="1514640673157" expanded="true" signature="3028:3061" ph="SELECT COUNT... transaction" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/customer/list_transaction.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <caret line="133" column="12" lean-forward="true" selection-start-line="133" selection-start-column="12" selection-end-line="133" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/ShowDemandServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="80" column="16" lean-forward="true" selection-start-line="80" selection-start-column="16" selection-end-line="80" selection-end-column="31" />
+          <folding>
+            <marker date="1514607067921" expanded="true" signature="1650:1717" ph="select partI... buy" />
+            <marker date="1514607067921" expanded="true" signature="1813:1880" ph="select custo... buy" />
+            <marker date="1514607067921" expanded="true" signature="1813:1891" ph="select partI... buy" />
+            <marker date="1514607067921" expanded="true" signature="2683:2718" ph="select name parts" />
+            <marker date="1514607067921" expanded="true" signature="3136:3174" ph="select name customer" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/customer/post_demand.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="131" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68969">
+          <caret line="5230" column="1" lean-forward="false" selection-start-line="5230" selection-start-column="1" selection-end-line="5230" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/supplier/content.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="77" column="12" lean-forward="false" selection-start-line="77" selection-start-column="12" selection-end-line="77" selection-end-column="12" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/footer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="43" column="25" lean-forward="false" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/customer/rightSide.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="23" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/customer/leftSide.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/leftSide.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="39" column="24" lean-forward="true" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/trader/content.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="78" column="12" lean-forward="false" selection-start-line="78" selection-start-column="12" selection-end-line="78" selection-end-column="12" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/trader/dashboard.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="23" lean-forward="true" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/supplier/dashboard.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/customer/content.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/ModifyDemandServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="34" column="51" lean-forward="false" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
+          <folding>
+            <marker date="1514532883756" expanded="true" signature="1433:1495" ph="update buy s... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/supplier/leftSide.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/customer/list_demand.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-312">
+          <caret line="261" column="0" lean-forward="true" selection-start-line="261" selection-start-column="0" selection-end-line="261" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#4;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/modifyUserInfoServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding>
+            <marker date="1514647122548" expanded="true" signature="1308:1315" ph="update missi... " />
+            <marker date="1514647122548" expanded="true" signature="1308:1349" ph="update buy s... " />
+            <marker date="1514647122548" expanded="true" signature="1454:1500" ph="update buy s... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/modify.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1850">
+          <caret line="223" column="20" lean-forward="false" selection-start-line="223" selection-start-column="20" selection-end-line="223" selection-end-column="20" />
+          <folding>
+            <element signature="n#style#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#2;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/customer/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="44" column="48" lean-forward="true" selection-start-line="44" selection-start-column="48" selection-end-line="44" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/customer/dashboard.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+          <folding>
+            <marker date="1514647467375" expanded="true" signature="2744:2810" ph="select name,... missingValue" />
           </folding>
         </state>
       </provider>

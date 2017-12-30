@@ -3,6 +3,7 @@ package servlet;
 import com.alibaba.fastjson.JSON;
 import model.Login;
 
+import util.DateUtil;
 import util.DbConn;
 
 import javax.servlet.ServletException;
@@ -34,8 +35,8 @@ public class LoginServlet extends HttpServlet {
         String type = request.getParameter("type");
 
 
-        /**
-         * 处理登录验证逻辑
+        /*
+          处理登录验证逻辑
          */
 
         currentUser.setType(type);
@@ -43,19 +44,20 @@ public class LoginServlet extends HttpServlet {
 
         if (checkIsLoginSuccess(username,password,type)){//登录成功
             currentUser.setStatus(1);
+            //设置session
+            HttpSession session = request.getSession(true);
+            try {
+                session.setAttribute("login", currentUser);
+
+            } catch (Exception e) {
+                //session.setAttribute("login", new Login());
+            }
         }else{//登录失败
             currentUser.setStatus(0);
         }
         String jsonString = JSON.toJSONString(currentUser);
 
-        //设置session
-        HttpSession session = request.getSession(true);
-        try {
-            session.setAttribute("login", currentUser);
 
-        } catch (Exception e) {
-            //session.setAttribute("login", new Login());
-        }
 
         OutputStream out = response.getOutputStream();
         out.write(jsonString.getBytes("UTF-8"));
@@ -87,14 +89,15 @@ public class LoginServlet extends HttpServlet {
         try {
 
             assert connection != null;
-            String queryString = "select name,id from " + type+ " where name = ? and password = ?";
+            String queryString = "select id,created from " + type+ " where name = ? and password = ?";
             PreparedStatement pStatement = connection.prepareStatement(queryString);
             pStatement.setString(1,userName);
             pStatement.setString(2,password);
             ResultSet resultSet = pStatement.executeQuery();
 
             if (resultSet.next()){//匹配成功，找到数据
-                currentUser.setUserId(resultSet.getInt(2));
+                currentUser.setUserId(resultSet.getInt(1));
+                currentUser.setDateTime(DateUtil.SQLDatetimeToString(resultSet.getDate(2)));
                 return true;
             }else{//登录失败
                 return false;

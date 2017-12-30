@@ -7,6 +7,7 @@ public class Login {
     private String name;
     private int userId;
     private String type;
+    private String dateTime;
 
     public int getUserId() {
         return userId;
@@ -39,6 +40,14 @@ public class Login {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public String getDateTime() {
+        return dateTime;
+    }
+
+    public void setDateTime(String dateTime) {
+        this.dateTime = dateTime;
     }
 
     /*public String getPassword() {

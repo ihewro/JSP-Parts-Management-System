@@ -12,7 +12,7 @@
             <!-- user -->
             <div class="clearfix hidden-xs text-center show" id="aside-user">
                 <div class="dropdown wrapper">
-                    <a href="app.page.profile">
+                    <a href="../modify.jsp">
                 <span class="thumb-lg w-auto-folded avatar m-t-sm">
                   <img src="../assets/img/avatar.jpeg" class="img-full" alt="...">
                 </span>

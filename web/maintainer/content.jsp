@@ -20,7 +20,7 @@
                 <div class="bg-light lter b-b wrapper-md">
                     <div class="row">
                         <div class="col-sm-12 col-xs-12">
-                            <h1 class="m-n font-thin h3 text-black">零件销售管理系统（用户界面）</h1>
+                            <h1 class="m-n font-thin h3 text-black">零件销售管理系统（维护员界面）</h1>
                         </div>
                     </div>
                 </div>

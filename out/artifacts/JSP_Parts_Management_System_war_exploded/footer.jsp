@@ -28,5 +28,24 @@
 <script src="../assets/js/function.js"></script>
 <script src="../assets/js/core.js"></script>
 
+<script>
+    $.ajax({
+        url: '../servlet/showTable',
+        type: 'GET',
+        error: function (data) {
+            alert("error" + data);
+            return false;
+        },
+        success: function (data) {
+            results = $.parseJSON(data);
+            $('#buyNum').html(results.buyNum);
+            $('#transactionNum').html(results.transactionNum);
+            $('#supplierNum').html(results.supplierNum);
+            $('#traderNum').html(results.traderNum);
+
+        }
+    });
+</script>
+
 </body>
 </html>

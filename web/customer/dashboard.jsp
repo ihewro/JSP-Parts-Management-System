@@ -7,6 +7,21 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="model.Login" %>
+<%
+    // 如果用户名已经存在，说明已经登录，跳转到主页
+
+    HttpSession session4 = request.getSession(true);
+    Login loginBean = (Login) session4.getAttribute("login");
+
+    if(loginBean == null){%>
+<script>
+    window.location="../index.jsp";
+</script>
+
+<% }
+
+%>
+
 
 <html>
 <head>
@@ -38,6 +53,7 @@
         <!-- / footer -->
 
     </div>
+
 
 </body>
 </html>

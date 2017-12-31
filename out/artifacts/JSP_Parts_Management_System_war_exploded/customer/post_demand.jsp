@@ -84,7 +84,6 @@
                             <div class="line line-dashed b-b line-lg pull-in"></div>
                             <div class="form-group">
                                 <div class="col-sm-4 col-sm-offset-2">
-                                    <button type="submit" class="btn btn-default">取消</button>
                                     <button type="submit" class="btn btn-primary">发布</button>
                                 </div>
                             </div>

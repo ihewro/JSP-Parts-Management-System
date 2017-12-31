@@ -50,7 +50,7 @@ public class ShowDemandServlet extends HttpServlet {
             if (customerId == -1){//id为-1代表查询所有用户的需求
                 pStatement = connection.prepareStatement("select partId,partPrice,partNum,created,customId,id,status from buy");
             }else{//否则查询某一具体用户的需求
-                pStatement = connection.prepareStatement("select partId,partPrice,partNum,created,customId,id,status from buy WHERE id=?");
+                pStatement = connection.prepareStatement("select partId,partPrice,partNum,created,customId,id,status from buy WHERE customId=?");
                 pStatement.setInt(1,customerId);
             }
             ResultSet resultSet = pStatement.executeQuery();

@@ -146,16 +146,17 @@
             }
 
             //赋初值：
-
-            $("#buy_user_name").text("求购用户: " + demandResults[0].customerName);
+            var initId = $('#post_demands_list option:first').attr('position');
+            //alert(initId);
+            $("#buy_user_name").text("求购用户: " + demandResults[initId].customerName);
             //$("input[name='customerId']").val(demandResults[0].customerId);
-            $("#buy_part_name").text("求购零件: " + demandResults[0].partName);
-            $("#buy_part_num").text("求购数量: " + demandResults[0].partNum);
-            $("#buy_part_price").text("求购价格: " + demandResults[0].partPrice);
+            $("#buy_part_name").text("求购零件: " + demandResults[initId].partName);
+            $("#buy_part_num").text("求购数量: " + demandResults[initId].partNum);
+            $("#buy_part_price").text("求购价格: " + demandResults[initId].partPrice);
 
             //动态生成下面的供应商列表
             $.ajax({
-                url: '../servlet/showSupply?partId=' + demandResults[0].partId,
+                url: '../servlet/showSupply?partId=' + demandResults[initId].partId,
                 type: 'GET',
                 error: function (data) {
                     alert("error" + data);
@@ -165,19 +166,22 @@
                     supplyList = $.parseJSON(data).supplyList;
                     $("#post_supplier_list").html("");
 
-                    for (var i = 0; i < supplyList.length; i++){
-                        //if (supplyList[i].partNum > demandResults[0].partNum){
+                    if (supplyList.length > 0){
+                        for (var i = 0; i < supplyList.length; i++){
+                            //if (supplyList[i].partNum > demandResults[0].partNum){
                             s = "<option position='"+ i+"' value=\"" + supplyList[i].supplyId + "\">"+ supplyList[i].supplierName +"</option>";
                             $("#post_supplier_list").append(s);
 
-                        //}
+                            //}
+                        }
+
+                        //初始赋值
+
+                        $("#supply_name").text("供应商名称：" + supplyList[0].supplierName);
+                        $("#supply_price").text("供应价格：" + supplyList[0].partPrice);
+                        $("#supply_num").text("供应数量：" + supplyList[0].partNum);
                     }
 
-                    //初始赋值
-
-                    $("#supply_name").text("供应商名称：" + supplyList[0].supplierName);
-                    $("#supply_price").text("供应价格：" + supplyList[0].partPrice);
-                    $("#supply_num").text("供应数量：" + supplyList[0].partNum);
                 }
 
             });

@@ -8,8 +8,6 @@ import java.util.Date;
 
 public class DateUtil {
 
-    private static SimpleDateFormat sdf =   new SimpleDateFormat( " yyyy-MM-dd HH:mm:ss " );
-
 
     /**
      *
@@ -18,7 +16,7 @@ public class DateUtil {
      */
     public static java.sql.Date stringToDate(String strDate){
         String str = strDate;
-        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
         java.util.Date d = null;
         try {
             d = format.parse(str);
@@ -32,7 +30,7 @@ public class DateUtil {
 
 
     public static String SQLDatetimeToString(java.sql.Date SQLDatetime){
-        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
         String dateString = formatter.format(SQLDatetime);
         return dateString;
     }

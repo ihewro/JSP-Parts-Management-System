@@ -44,9 +44,9 @@ public class ConfirmTransactionsServlet extends HttpServlet {
 
             //检查另一方是否同意，如果两方同时同意的话，将需求标记为求购成功
             if (flag == 0){//检查供应商状态
-                pStatement = connection.prepareStatement("select supplierStatus,buyId from transaction WHERE id=?");
+                pStatement = connection.prepareStatement("select supplierStatus,buyId,partNum,supplyId from transaction WHERE id=?");
             }else{
-                pStatement = connection.prepareStatement("select customerStatus,buyId from transaction WHERE id=?");
+                pStatement = connection.prepareStatement("select customerStatus,buyId,partNum,supplyId from transaction WHERE id=?");
             }
             pStatement.setInt(1,transactionId);
 
@@ -57,9 +57,17 @@ public class ConfirmTransactionsServlet extends HttpServlet {
             rowSet.last();
 
             if (rowSet.getInt(1) == 1){//代表双方都已经同意了
+
                 pStatement = connection.prepareStatement("update buy set status = ? where id=?");
                 pStatement.setInt(1,1);//设置需求buy表中的状态为1，代表求购成功
                 pStatement.setInt(2,rowSet.getInt(2));
+                pStatement.executeUpdate();
+
+
+                //而且需要把对应的供应商的该零件的数量减少对应的建议的数量
+                pStatement = connection.prepareStatement("update supply set partNum = partNum - ? where id=?");
+                pStatement.setInt(1,rowSet.getInt(3));
+                pStatement.setInt(2,rowSet.getInt(4));
                 pStatement.executeUpdate();
             }
 

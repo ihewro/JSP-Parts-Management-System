@@ -12,8 +12,8 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 
-@WebServlet(name = "modifyUserInfoServlet",urlPatterns = {"/servlet/modifyUser"})
-public class modifyUserInfoServlet extends HttpServlet {
+@WebServlet(name = "ModifyUserInfoServlet",urlPatterns = {"/servlet/modifyUser"})
+public class ModifyUserInfoServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");
         response.setCharacterEncoding("utf-8");

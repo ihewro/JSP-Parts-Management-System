@@ -22,7 +22,7 @@ public class DbConn {
 			String driver = "com.mysql.jdbc.Driver";
 			Class.forName(driver);
 			//连接数据库
-			String url = "jdbc:mysql://localhost/management";
+			String url = "jdbc:mysql://localhost/management?characterEncoding=utf8";
 			String user = "hewro";
 			String passwd = "ihewro19980801";
 			Connection conn = DriverManager.getConnection(url, user, passwd);

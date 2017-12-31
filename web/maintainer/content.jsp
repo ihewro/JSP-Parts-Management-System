@@ -32,8 +32,8 @@
                             <div class="row row-sm text-center">
                                 <div class="col-xs-6">
                                     <div class="panel padder-v item">
-                                        <div class="h1 text-info font-thin h1">521</div>
-                                        <span class="text-muted text-xs">New items</span>
+                                        <div class="h1 text-info font-thin h1" id="buyNum">521</div>
+                                        <span class="text-muted text-xs">需求数目</span>
                                         <div class="top text-right w-full">
                                             <i class="fa fa-caret-down text-warning m-r-sm"></i>
                                         </div>
@@ -41,8 +41,8 @@
                                 </div>
                                 <div class="col-xs-6">
                                     <a href="" class="block panel padder-v bg-primary item">
-                                        <span class="text-white font-thin h1 block">930</span>
-                                        <span class="text-muted text-xs">Uploads</span>
+                                        <span class="text-white font-thin h1 block" id="transactionNum">930</span>
+                                        <span class="text-muted text-xs">交易数目</span>
                                         <span class="bottom text-right w-full">
                   <i class="fa fa-cloud-upload text-muted m-r-sm"></i>
                 </span>
@@ -50,8 +50,8 @@
                                 </div>
                                 <div class="col-xs-6">
                                     <a href="" class="block panel padder-v bg-info item">
-                                        <span class="text-white font-thin h1 block">432</span>
-                                        <span class="text-muted text-xs">Comments</span>
+                                        <span class="text-white font-thin h1 block" id="supplierNum">432</span>
+                                        <span class="text-muted text-xs">供应商数目</span>
                                         <span class="top">
                   <i class="fa fa-caret-up text-warning m-l-sm m-r-sm"></i>
                 </span>
@@ -59,8 +59,8 @@
                                 </div>
                                 <div class="col-xs-6">
                                     <div class="panel padder-v item">
-                                        <div class="font-thin h1">129</div>
-                                        <span class="text-muted text-xs">Feeds</span>
+                                        <div class="font-thin h1" id="traderNum">129</div>
+                                        <span class="text-muted text-xs">交易员数目</span>
                                         <div class="bottom">
                                             <i class="fa fa-caret-up text-warning m-l-sm m-r-sm"></i>
                                         </div>
@@ -84,3 +84,4 @@
 
     </div>
 </div>
+

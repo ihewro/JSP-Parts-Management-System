@@ -23,7 +23,6 @@
                     <strong class="font-bold text-lt"><%= ((Login)(request.getSession(true).getAttribute("login"))).getName() %></strong>
                     <b class="caret"></b>
                   </span>
-                  <span class="text-muted text-xs block">Art Director</span>
                 </span>
                     </a>
                 </div>
@@ -49,21 +48,15 @@
                         <span>组成</span>
                     </li>
                     <li>
-                        <a href="post_supply.jsp">
+                        <a href="post_part.jsp">
                             <i class="fa  fa-edit"></i>
-                            <span>发布供应</span>
+                            <span>发布商品</span>
                         </a>
                     </li>
                     <li>
-                        <a href="list_supply.jsp">
+                        <a href="list_part.jsp">
                             <i class="fa fa-list-ol"></i>
-                            <span>供应列表</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="list_supply.jsp">
-                            <i class="fa fa-shopping-cart"></i>
-                            <span>订单列表</span>
+                            <span>商品列表</span>
                         </a>
                     </li>
                 </ul>

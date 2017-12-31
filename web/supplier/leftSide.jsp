@@ -23,7 +23,6 @@
                     <strong class="font-bold text-lt"><%= ((Login)(request.getSession(true).getAttribute("login"))).getName() %></strong>
                     <b class="caret"></b>
                   </span>
-                  <span class="text-muted text-xs block">Art Director</span>
                 </span>
                     </a>
                 </div>

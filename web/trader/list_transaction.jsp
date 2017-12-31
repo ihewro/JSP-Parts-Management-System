@@ -64,11 +64,11 @@
                         <table class="table table-striped b-t b-light">
                             <thead>
                             <tr>
-                                <th>序号</th>
+                                <th>交易序号</th>
                                 <th>商品编号</th>
                                 <th>商品名称</th>
-                                <th>交易数量</th>
-                                <th>交易价格</th>
+                                <th>建议数量</th>
+                                <th>建议价格</th>
                                 <th>顾客状态</th>
                                 <th>供应商状态</th>
                             </tr>
@@ -123,7 +123,7 @@
                     default:break;
                 }
                 s = "<tr>" +
-                    '<td>' + parseInt(i+1) + '</td>' +
+                    '<td>' + results[i].transactionId + '</td>' +
                     '<td>' + results[i].partId + '</td>' +
                     '<td>' + results[i].partName + '</td>' +
                     '<td>' + results[i].partNum + '</td>' +

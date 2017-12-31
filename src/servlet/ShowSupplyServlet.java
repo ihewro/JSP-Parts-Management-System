@@ -35,19 +35,25 @@ public class ShowSupplyServlet extends HttpServlet {
         response.setHeader("content-type","text/html;charset=UTF-8");
         //连接数据库，查询需求列表
 
-        int id = -1;
+        int partId = -1;
+        String partLimit ="";
         if (request.getParameter("partId") != null) {
-            id = Integer.parseInt(request.getParameter("partId"));
+            partId = Integer.parseInt(request.getParameter("partId"));
+            partLimit = " where partId=" + partId;
         }
+        int userId = -1;
+        String userLimit = "";
+        if (request.getParameter("userId") != null){
+            userId = Integer.parseInt(request.getParameter("userId"));
+            userLimit = " where supplierId=" + userId;
+        }
+
         Connection connection = DbConn.getConnection();
         PreparedStatement pStatement = null;
         try {
-            if (id == -1){//id为-1代表查询所有用户的需求
-                pStatement = connection.prepareStatement("select partId,partPrice,partNum,created,supplierId,id from supply");
-            }else{//否则查询某一具体用户的需求
-                pStatement = connection.prepareStatement("select partId,partPrice,partNum,created,supplierId,id from supply WHERE partId=?");
-                pStatement.setInt(1,id);
-            }
+
+            pStatement = connection.prepareStatement("select partId,partPrice,partNum,created,supplierId,id from supply"+partLimit+userLimit);
+
             ResultSet resultSet = pStatement.executeQuery();
             CachedRowSetImpl rowSet = null;
             rowSet = new CachedRowSetImpl();
@@ -93,7 +99,7 @@ public class ShowSupplyServlet extends HttpServlet {
                 resultSet1.close();
             }
             suppliesJson.setSupplyList(supplyList);
-            suppliesJson.setSupplierId(id);
+            suppliesJson.setSupplierId(partId);
 
 
 

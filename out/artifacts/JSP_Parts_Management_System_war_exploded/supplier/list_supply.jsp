@@ -180,7 +180,7 @@
 </div>
 <script>
     $.ajax({
-        url: '../servlet/showSupply',
+        url: '../servlet/showSupply?userId=<%= ((Login)(request.getSession(true).getAttribute("login"))).getUserId() %>',
         type: 'GET',
         error: function (data) {
             alert("error" + data);
@@ -196,7 +196,7 @@
                     '<td>' + results[i].partNum + '</td>' +
                     '<td>' + results[i].partPrice + '</td>' +
                     '<td>' + results[i].created + '</td>' +
-                    '<td><button class="btn btn-default btn-xs" data-toggle="modal" data-target="#modifyModal" data-partid="' + results[i].partId + '" data-partnum="' + results[i].partNum +'" data-partprice="' + results[i].partPrice +'" data-mainid="' + parseInt(i+1) + '">修改</button><button class="btn btn-default btn-xs" data-toggle="modal" data-target="#deleteModal" data-deleteid="' + parseInt(i+1) + '">删除</button></td>' +
+                    '<td><button class="btn btn-default btn-xs" data-toggle="modal" data-target="#modifyModal" data-partid="' + results[i].partId + '" data-partnum="' + results[i].partNum +'" data-partprice="' + results[i].partPrice +'" data-mainid="' + results[i].supplyId + '">修改</button><button class="btn btn-default btn-xs" data-toggle="modal" data-target="#deleteModal" data-deleteid="' + results[i].supplyId + '">删除</button></td>' +
                     '</tr>';
                 $("#demands_table").append(s);
             }

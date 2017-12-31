@@ -102,7 +102,7 @@
                                                             //out.println("获取到数据");
                                                             try {
                                                                 while (rowSet.next()){
-                                                                    out.println(" <option value=\"" + rowSet.getInt(1) + "\">" + rowSet.getString(3)+"</option>");
+                                                                    out.println(" <option position=\""+length+"\" value=\"" + rowSet.getInt(1) + "\">" + rowSet.getString(3)+"</option>");
                                                                     length ++;
                                                                 }
                                                             } catch (SQLException e) {
@@ -181,7 +181,7 @@
 </div>
 <script>
     $.ajax({
-        url: '../servlet/showDemand',
+        url: '../servlet/showDemand?userId=<%= ((Login)(request.getSession(true).getAttribute("login"))).getUserId() %>',
         type: 'GET',
         error: function (data) {
             alert("error" + data);
@@ -264,7 +264,7 @@
         $('#deleteOk').click(function (e) {
             //执行删除
             $.ajax({
-                url: '../servlet/deleteDemand?userId=<%= ((Login)(request.getSession(true).getAttribute("login"))).getUserId() %>',
+                url: '../servlet/deleteDemand',
                 type: 'POST',
                 data: {id:mainId},
                 error: function (data) {

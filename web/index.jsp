@@ -67,8 +67,8 @@
           <button type="submit" class="btn btn-lg btn-primary btn-block">登录</button>
           <div class="text-center m-t m-b"><a>忘记密码?</a></div>
           <div class="line line-dashed"></div>
-          <p class="text-center"><small>Do not have an account?</small></p>
-          <a ui-sref="access.signup" class="btn btn-lg btn-default btn-block">注册</a>
+          <p class="text-center"><small>还没有账号?</small></p>
+          <a href="/register.jsp" class="btn btn-lg btn-default btn-block">注册</a>
         </form>
 
       </div>

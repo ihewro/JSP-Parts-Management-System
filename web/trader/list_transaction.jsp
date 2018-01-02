@@ -38,7 +38,7 @@
 
 
             <div class="bg-light lter b-b wrapper-md">
-                <h1 class="m-n font-thin h3">需求列表</h1>
+                <h1 class="m-n font-thin h3">用户交易列表</h1>
             </div>
             <div class="wrapper-md">
 
@@ -48,17 +48,11 @@
                     </div>
                     <div class="row wrapper">
                         <div class="col-sm-5 m-b-xs">
-                            <button class="btn btn-sm btn-default">添加新需求</button>
+                            <button class="btn btn-sm btn-default">添加新交易</button>
                         </div>
                         <div class="col-sm-4">
                         </div>
-                        <div class="col-sm-3">
-                            <div class="input-group">
-                                <input type="text" class="input-sm form-control" placeholder="跳转页码">
-                                <span class="input-group-btn">
-            <button class="btn btn-sm btn-default" type="button">Go!</button></span>
-                            </div>
-                        </div>
+
                     </div>
                     <div class="table-responsive">
                         <table class="table table-striped b-t b-light">

@@ -49,13 +49,7 @@
                     <div class="row wrapper">
                         <div class="col-sm-4">
                         </div>
-                        <div class="col-sm-3">
-                            <div class="input-group">
-                                <input type="text" class="input-sm form-control" placeholder="跳转页码">
-                                <span class="input-group-btn">
-            <button class="btn btn-sm btn-default" type="button">Go!</button></span>
-                            </div>
-                        </div>
+
                     </div>
                     <div class="table-responsive">
                         <table class="table table-striped b-t b-light">
@@ -132,7 +126,7 @@
 </div>
 <script>
     $.ajax({
-        url: '../servlet/showTransaction?userId=<%= ((Login)(request.getSession(true).getAttribute("login"))).getUserId() %>',
+        url: '../servlet/showTransaction?supplierId=<%= ((Login)(request.getSession(true).getAttribute("login"))).getUserId() %>',
         type: 'GET',
         error: function (data) {
             alert("error" + data);

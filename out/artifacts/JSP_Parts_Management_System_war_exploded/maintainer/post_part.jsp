@@ -111,29 +111,6 @@
     });
 
 
-    var results;
-    $.ajax({
-        url: '../servlet/showParts',
-        type: 'GET',
-        error: function (data) {
-            alert("error" + data);
-            return false;
-        },
-        success: function (data) {
-            results = $.parseJSON(data).partList;
-            for (var i = 0; i < results.length; i++){
-                s = "<option value=\"" + results[i].partId + "\">"+ results[i].name +"</option>";
-                $("#post_parts_list").append(s);
-            }
-        }
-    });
-
-    $('#post_parts_list').change(function(){
-        var p1=$(this).children('option:selected').val();//这就是selected的值
-        $("#part_color").text("颜色: " + results[p1 - 1].color);
-        $("#part_weight").text("重量: " + results[p1 - 1].weight);
-        $("#part_intro").text("描述: " + results[p1 - 1].text);
-    });
 
 
 </script>

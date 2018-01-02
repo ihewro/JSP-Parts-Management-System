@@ -52,13 +52,7 @@
                         </div>
                         <div class="col-sm-4">
                         </div>
-                        <div class="col-sm-3">
-                            <div class="input-group">
-                                <input type="text" class="input-sm form-control" placeholder="跳转页码">
-                                <span class="input-group-btn">
-            <button class="btn btn-sm btn-default" type="button">Go!</button></span>
-                            </div>
-                        </div>
+
                     </div>
                     <div class="table-responsive">
                         <table class="table table-striped b-t b-light">
@@ -101,7 +95,7 @@
                                                             //out.println("获取到数据");
                                                             try {
                                                                 while (rowSet.next()){
-                                                                    out.println(" <option value=\"" + rowSet.getInt(1) + "\">" + rowSet.getString(3)+"</option>");
+                                                                    out.println(" <option position = \"" + length + "\" value=\"" + rowSet.getInt(1) + "\">" + rowSet.getString(3)+"</option>");
                                                                     length ++;
                                                                 }
                                                             } catch (SQLException e) {
@@ -282,10 +276,10 @@
     });
 
     $('#post_parts_list').change(function(){
-        var p1=$(this).children('option:selected').val();//这就是selected的值
-        $("#part_color").text("颜色: " + results[p1 - 1].color);
-        $("#part_weight").text("重量: " + results[p1 - 1].weight);
-        $("#part_intro").text("描述: " + results[p1 - 1].text);
+        var p1=$(this).children('option:selected').attr('position');//这就是selected的值
+        $("#part_color").text("颜色: " + results[p1].color);
+        $("#part_weight").text("重量: " + results[p1].weight);
+        $("#part_intro").text("描述: " + results[p1].text);
     });
 
     $("input[name='partPrice']").TouchSpin({

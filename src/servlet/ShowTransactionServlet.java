@@ -38,6 +38,13 @@ public class ShowTransactionServlet extends HttpServlet {
             userId = Integer.parseInt(request.getParameter("userId"));
         }
 
+        int supplierId = -1;
+        if (request.getParameter("supplierId") != null){
+            supplierId = Integer.parseInt(request.getParameter("supplierId"));
+        }
+        String userLimit = "";
+        String supplierLimit = "";
+
 
         //连接数据库，查询需求列表
 
@@ -46,10 +53,11 @@ public class ShowTransactionServlet extends HttpServlet {
         try {
             PreparedStatement pStatement = null;
             if (userId != -1){
-                pStatement = connection.prepareStatement("SELECT suggestion,transaction.id,customerStatus,supplierStatus,buyId,customer.id,customer.name,supplier.id,supplier.name, parts.id,transaction.partNum,transaction.partPrice,parts.name from transaction,buy,supply,customer,supplier,parts WHERE supplyId = supply.id and buyId = buy.id AND customer.id = buy.customId and supplier.id = supply.supplierId and parts.id = supply.partId and buy.customId="+userId);
+                userLimit = " and buy.customId="+userId;
             }else {
-                pStatement = connection.prepareStatement("SELECT suggestion,transaction.id,customerStatus,supplierStatus,buyId,customer.id,customer.name,supplier.id,supplier.name, parts.id,transaction.partNum,transaction.partPrice,parts.name from transaction,buy,supply,customer,supplier,parts WHERE supplyId = supply.id and buyId = buy.id AND customer.id = buy.customId and supplier.id = supply.supplierId and parts.id = supply.partId");
+                supplierLimit = " and supplier.id=" + supplierId;
             }
+            pStatement = connection.prepareStatement("SELECT suggestion,transaction.id,customerStatus,supplierStatus,buyId,customer.id,customer.name,supplier.id,supplier.name, parts.id,transaction.partNum,transaction.partPrice,parts.name from transaction,buy,supply,customer,supplier,parts WHERE supplyId = supply.id and buyId = buy.id AND customer.id = buy.customId and supplier.id = supply.supplierId and parts.id = supply.partId" + userLimit + supplierLimit);
             ResultSet resultSet = pStatement.executeQuery();
             CachedRowSetImpl rowSet = null;
             rowSet = new CachedRowSetImpl();

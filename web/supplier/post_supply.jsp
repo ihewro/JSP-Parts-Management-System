@@ -47,8 +47,8 @@
                     </div>
                     <div class="panel-body">
                         <form class="form-horizontal" method="post" action="${pageContext.request.contextPath}/servlet/addSupply">
-                            <input type="hidden" name="supplierId" value="<%= ((Login)(request.getSession(true).getAttribute("login"))).getUserId() %>">
-                            <input type="hidden" name="created" value="<%
+                            <input required type="hidden" name="supplierId" value="<%= ((Login)(request.getSession(true).getAttribute("login"))).getUserId() %>">
+                            <input required type="hidden" name="created" value="<%
                              java.text.SimpleDateFormat simpleDateFormat = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
                              java.util.Date currentTime = new java.util.Date();
                              String time2 = simpleDateFormat.format(currentTime);
@@ -70,7 +70,7 @@
                                 <label class="col-sm-2 control-label">理想价格</label>
                                 <div class="col-sm-10">
                                     <div class="m-b">
-                                        <input name="partPrice" type="text" class="form-control" style="display: block;">
+                                        <input required name="partPrice" type="text" class="form-control" style="display: block;">
                                     </div>
                                 </div>
                             </div>
@@ -78,7 +78,7 @@
                             <div class="form-group">
                                 <label class="col-sm-2 control-label">数量</label>
                                 <div class="col-sm-10">
-                                    <input class="form-control m-b" type="text" placeholder="数量" name="partNum">
+                                    <input required class="form-control m-b" type="text" placeholder="数量" name="partNum">
                                 </div>
                             </div>
                             <div class="line line-dashed b-b line-lg pull-in"></div>

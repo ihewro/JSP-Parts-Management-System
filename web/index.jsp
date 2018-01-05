@@ -49,10 +49,10 @@
           </div>
           <div class="list-group list-group-sm">
             <div class="list-group-item">
-              <input type="text" placeholder="用户名" name="username" class="form-control no-border" required>
+              <input required type="text" placeholder="用户名" name="username" class="form-control no-border" required>
             </div>
             <div class="list-group-item">
-              <input type="password" placeholder="密码" name="password" class="form-control no-border" required>
+              <input required type="password" placeholder="密码" name="password" class="form-control no-border" required>
             </div>
           </div>
           <div class="form-group">

@@ -50,7 +50,7 @@
                     </div>
                     <div class="panel-body">
                         <form class="form-horizontal" method="post" action="${pageContext.request.contextPath}/servlet/addTransaction">
-                            <input type="hidden" name="created" value="<%
+                            <input required type="hidden" name="created" value="<%
                              java.text.SimpleDateFormat simpleDateFormat = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
                              java.util.Date currentTime = new java.util.Date();
                              String time2 = simpleDateFormat.format(currentTime);
@@ -66,7 +66,7 @@
                                     <span class="help-block m-b-none" id="buy_part_name"></span>
                                     <span class="help-block m-b-none" id="buy_part_num"></span>
                                     <span class="help-block m-b-none" id="buy_part_price"></span>
-                                    <!--<input name="customerId" value="" type="hidden">-->
+                                    <!--<input required name="customerId" value="" type="hidden">-->
                                 </div>
                             </div>
 
@@ -85,21 +85,21 @@
                             <div class="form-group">
                                 <label class="col-sm-2 control-label">建议价格</label>
                                 <div class="col-sm-10">
-                                    <input class="form-control m-b" type="text" placeholder="建议" name="partPrice">
+                                    <input required class="form-control m-b" type="text" placeholder="建议" name="partPrice">
                                 </div>
                             </div>
                             <div class="line line-dashed b-b line-lg pull-in"></div>
                             <div class="form-group">
                                 <label class="col-sm-2 control-label">建议数量</label>
                                 <div class="col-sm-10">
-                                    <input class="form-control m-b" type="text" placeholder="建议" name="partNum">
+                                    <input required class="form-control m-b" type="text" placeholder="建议" name="partNum">
                                 </div>
                             </div>
                             <div class="line line-dashed b-b line-lg pull-in"></div>
                             <div class="form-group">
                                 <label class="col-sm-2 control-label">其他建议</label>
                                 <div class="col-sm-10">
-                                    <input class="form-control m-b" type="text" placeholder="建议" name="suggestion">
+                                    <input required class="form-control m-b" type="text" placeholder="建议" name="suggestion">
                                 </div>
                             </div>
                             <div class="line line-dashed b-b line-lg pull-in"></div>

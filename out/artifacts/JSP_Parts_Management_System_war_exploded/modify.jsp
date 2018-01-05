@@ -169,13 +169,12 @@
                                 <div class="col-lg-12 b-r">
                                     <div class="form-group">
                                         <label class="insert_tips">修改后的用户名</label>
-                                        <input class="form-control m-b" type="text" placeholder="请输入" name="modifyText">
+                                        <input required class="form-control m-b" type="text" placeholder="请输入" name="modifyText">
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal"> 取消 </button>
                             <button type="button" id="modifyOk" class="btn btn-primary">确定</button>
                         </div>
                     </div>

@@ -118,13 +118,13 @@
                                         <div class="col-lg-12 b-r">
                                             <div class="form-group">
                                                 <label class="insert_tips">求购数量</label>
-                                                <input class="form-control m-b" type="text" placeholder="数量" name="partNum">
+                                                <input required class="form-control m-b" type="text" placeholder="数量" name="partNum">
                                             </div>
                                         </div>
                                         <div class="col-lg-12 b-r">
                                             <div class="form-group">
                                                 <label class="insert_tips">求购价格</label>
-                                                <input name="partPrice" type="text" class="form-control" style="display: block;">
+                                                <input required name="partPrice" type="text" class="form-control" style="display: block;">
                                             </div>
                                         </div>
                                     </div>

@@ -48,7 +48,7 @@
             </div>
             <form name="form" class="form-validation" id="register_form" method="post">
                 <div class="text-danger wrapper text-center">
-                    <input type="hidden" name="created" value="<%
+                    <input required type="hidden" name="created" value="<%
                              java.text.SimpleDateFormat simpleDateFormat = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
                              java.util.Date currentTime = new java.util.Date();
                              String time2 = simpleDateFormat.format(currentTime);
@@ -56,10 +56,10 @@
                 </div>
                 <div class="list-group list-group-sm">
                     <div class="list-group-item">
-                        <input name="username" placeholder="注册名称" class="form-control no-border">
+                        <input required name="username" placeholder="注册名称" class="form-control no-border">
                     </div>
                     <div class="list-group-item">
-                        <input name="password" type="password" placeholder="密码" class="form-control no-border" required="">
+                        <input required name="password" type="password" placeholder="密码" class="form-control no-border" required="">
                     </div>
                 </div>
                 <div class="form-group">

@@ -54,7 +54,8 @@ public class ShowTransactionServlet extends HttpServlet {
             PreparedStatement pStatement = null;
             if (userId != -1){
                 userLimit = " and buy.customId="+userId;
-            }else {
+            }
+            if(supplierId != -1){
                 supplierLimit = " and supplier.id=" + supplierId;
             }
             pStatement = connection.prepareStatement("SELECT suggestion,transaction.id,customerStatus,supplierStatus,buyId,customer.id,customer.name,supplier.id,supplier.name, parts.id,transaction.partNum,transaction.partPrice,parts.name from transaction,buy,supply,customer,supplier,parts WHERE supplyId = supply.id and buyId = buy.id AND customer.id = buy.customId and supplier.id = supply.supplierId and parts.id = supply.partId" + userLimit + supplierLimit);

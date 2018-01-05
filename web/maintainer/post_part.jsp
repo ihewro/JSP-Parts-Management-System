@@ -53,21 +53,21 @@
                             <div class="form-group">
                                 <label class="col-sm-2 control-label">名称</label>
                                 <div class="col-sm-10">
-                                    <input class="form-control m-b" type="text" placeholder="名称" name="name">
+                                    <input required class="form-control m-b" type="text" placeholder="名称" name="name">
                                 </div>
                             </div>
                             <div class="line line-dashed b-b line-lg pull-in"></div>
                             <div class="form-group">
                                 <label class="col-sm-2 control-label">颜色</label>
                                 <div class="col-sm-10">
-                                    <input class="form-control m-b" type="text" placeholder="颜色" name="color">
+                                    <input required class="form-control m-b" type="text" placeholder="颜色" name="color">
                                 </div>
                             </div>
                             <div class="line line-dashed b-b line-lg pull-in"></div>
                             <div class="form-group">
                                 <label class="col-sm-2 control-label">重量</label>
                                 <div class="col-sm-10">
-                                    <input class="form-control m-b" type="text" placeholder="重量" name="weight">
+                                    <input required class="form-control m-b" type="text" placeholder="重量" name="weight">
                                 </div>
                             </div>
                             <div class="line line-dashed b-b line-lg pull-in"></div>
@@ -75,7 +75,7 @@
                             <div class="form-group">
                                 <label class="col-sm-2 control-label">简介</label>
                                 <div class="col-sm-10">
-                                    <input class="form-control m-b" type="text" placeholder="简介" name="introduction">
+                                    <input required class="form-control m-b" type="text" placeholder="简介" name="introduction">
                                 </div>
                             </div>
                             <div class="line line-dashed b-b line-lg pull-in"></div>

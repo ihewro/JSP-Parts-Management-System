@@ -84,30 +84,30 @@
                                 </div>
                                 <div class="modal-body">
                                     <div class="row">
-                                        <input class="form-control m-b" type="hidden"  name="partId">
+                                        <input required class="form-control m-b" type="hidden"  name="partId">
                                         <div class="col-lg-12 b-r">
                                             <div class="form-group">
                                                 <label class="insert_tips">零件名称</label>
-                                                <input class="form-control m-b" type="text" placeholder="名称" name="partName">
+                                                <input required class="form-control m-b" type="text" placeholder="名称" name="partName">
 
                                             </div>
                                         </div>
                                         <div class="col-lg-12 b-r">
                                             <div class="form-group">
                                                 <label class="insert_tips">零件颜色</label>
-                                                <input class="form-control m-b" type="text" placeholder="数量" name="partColor">
+                                                <input required class="form-control m-b" type="text" placeholder="数量" name="partColor">
                                             </div>
                                         </div>
                                         <div class="col-lg-12 b-r">
                                             <div class="form-group">
                                                 <label class="insert_tips">零件重量</label>
-                                                <input name="partWeight" type="text" class="form-control" style="display: block;">
+                                                <input required name="partWeight" type="text" class="form-control" style="display: block;">
                                             </div>
                                         </div>
                                         <div class="col-lg-12 b-r">
                                             <div class="form-group">
                                                 <label class="insert_tips">零件简介</label>
-                                                <input name="partIntroduction" type="text" class="form-control" style="display: block;">
+                                                <input required name="partIntroduction" type="text" class="form-control" style="display: block;">
                                             </div>
                                         </div>
                                     </div>
